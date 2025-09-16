@@ -1,4 +1,9 @@
 .sidebar-wrapper {
+    display: none;
+}
+@media only screen and (min-width: 1280px) {
+.sidebar-wrapper {
+    display: block;
     width: 200px;
     border: 1px dashed cadetblue;
     padding: 10px;
@@ -7,4 +12,5 @@
 .sidebar-wrapper>a {
     display: block;
     margin-bottom: 50px;
+}
 }
