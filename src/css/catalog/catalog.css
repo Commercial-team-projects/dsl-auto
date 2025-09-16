@@ -1,0 +1,15 @@
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+
+@import url('./header.css');
+@import url('./index/mobile-menu.css');
+@import url('./index/filter.css');
+@import url('./sidebar.css');
+@import url('./index/callback.css');
+@import url('./footer.css');
+
+/* Catalog page */
+@import url('/src/css/catalog/car-list.css');
+@import url('./catalog/pagination.css');

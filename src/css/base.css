@@ -1,18 +1,19 @@
 :root {
-  --style: #c7cad1;
-  --8b8b8b: #8b8b8b;
-  --000000: #000;
-  --cd0000: #cd0000;
+  --color-light-grey: #c7cad1;
+  --color-grey: #8b8b8b;
+  --color-black: #000;
+  --color-red: #cd0000;
   --color-white: #fff;
+  --color-green: #73db43;
+  --color-yellow: #ebb428;
 
   --font-family: 'Montserrat', sans-serif;
-  --second-family: 'Inter', sans-serif;
 }
 
 body {
   body {
     background-color: var(--color-white);
-    color: var(--000000);
+    color: var(--color-black);
     font-family: var(--font-family);
     font-size: 14px;
   }

@@ -9,25 +9,28 @@
 @import url('./base.css');
 @import url('./container.css');
 
-/* Sections style */
 @import url('./header.css');
 @import url('./index/mobile-menu.css');
-@import url('./index/breadcrumbs.css');
-@import url('./index/hero.css');
 @import url('./index/filter.css');
 @import url('./sidebar.css');
+@import url('./index/location.css');
+@import url('./index/callback.css');
+@import url('./footer.css');
+
+/* Index page */
+
+@import url('./index/hero.css');
+@import url('./index/filter.css');
 @import url('./index/popular.css');
 @import url('./index/benefits.css');
 @import url('./index/comments.css');
 @import url('./index/buying.css');
 @import url('./index/reviews.css');
 @import url('./index/location.css');
-@import url('./index/callback.css');
-@import url('./footer.css');
 
 /* Catalog page */
-@import url('./index/popular.css');
-@import url('./catalog/pagination.css');
+/* @import url('./catalog/car-list.css');
+@import url('./catalog/pagination.css'); */
 
 /* Card page */
 @import url('./card/gallery.css');
