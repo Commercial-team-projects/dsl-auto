@@ -8,18 +8,32 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./main.css');
-@import url('./filter.css');
-@import url('./popular.css');
-@import url('./benefits.css');
-@import url('./comments.css');
-@import url('./buying.css');
-@import url('./reviews.css');
-@import url('./contactus.css');
-@import url('./feedback.css');
-@import url('./back-link.css');
+@import url('./index/mobile-menu.css');
+@import url('./index/breadcrumbs.css');
+@import url('./index/hero.css');
+@import url('./index/filter.css');
+@import url('./sidebar.css');
+@import url('./index/popular.css');
+@import url('./index/benefits.css');
+@import url('./index/comments.css');
+@import url('./index/buying.css');
+@import url('./index/reviews.css');
+@import url('./index/location.css');
+@import url('./index/callback.css');
 @import url('./footer.css');
+
+/* Catalog page */
+@import url('./index/popular.css');
+@import url('./catalog/pagination.css');
+
+/* Card page */
+@import url('./card/gallery.css');
+@import url('./card/recomendation.css');
+
+/* Information page */
+@import url('./information/faq.css');
+
+/* Contacts page */

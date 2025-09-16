@@ -4,28 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>DSL Auto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-    <load src="./partials/mobile-menu.html" icon-path="img/sprite.svg#logo" />
+    <load src="./header.html" icon-path="img/sprite.svg#logo" />
+    <load
+      src="./partials/index/mobile-menu.html"
+      icon-path="img/sprite.svg#logo"
+    />
 
     <main>
-      <load src="./partials/hero.html" />
-      <load src="./partials/breadcrumbs.html" />
-      <load src="./partials/filter.html" />
-      <load src="./partials/sidebar.html" />
-      <load src="./partials/popular.html" />
-      <load src="./partials/benefits.html" />
-      <load src="./partials/comments.html" />
-      <load src="./partials/buying.html" />
-      <load src="./partials/reviews.html" />
-      <load src="./partials/contactus.html" />
-      <load src="./partials/callback.html" />
+      <load src="./partials/index/hero.html" />
+      <load src="./partials/index/breadcrumbs.html" />
+      <load src="./partials/index/filter.html" />
+      <load src="./sidebar.html" />
+      <load src="./partials/index/popular.html" />
+      <load src="./partials/index/benefits.html" />
+      <load src="./partials/index/comments.html" />
+      <load src="./partials/index/buying.html" />
+      <load src="./partials/index/reviews.html" />
+      <load src="./partials/index/location.html" />
+      <load src="./partials/index/callback.html" />
     </main>
 
-    <load src="./partials/footer.html" />
+    <load src="./footer.html" />
 
     <script type="module" src="./main.js"></script>
   </body>

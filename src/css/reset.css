@@ -1,3 +1,4 @@
+/*Reset styles*/
 h1,
 h2,
 h3,
@@ -27,7 +28,8 @@ button {
   cursor: pointer;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
   height: auto;
