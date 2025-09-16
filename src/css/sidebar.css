@@ -1,0 +1,10 @@
+.sidebar-wrapper {
+    width: 200px;
+    border: 1px dashed cadetblue;
+    padding: 10px;
+}
+
+.sidebar-wrapper>a {
+    display: block;
+    margin-bottom: 50px;
+}

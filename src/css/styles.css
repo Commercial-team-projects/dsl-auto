@@ -10,11 +10,11 @@
 @import url('./container.css');
 
 @import url('./header.css');
-@import url('./index/mobile-menu.css');
+@import url('./mobile-menu.css');
 @import url('./index/filter.css');
 @import url('./sidebar.css');
 @import url('./index/location.css');
-@import url('./index/callback.css');
+@import url('./callback.css');
 @import url('./footer.css');
 
 /* Index page */
