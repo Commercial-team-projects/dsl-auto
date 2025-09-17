@@ -1,17 +1,21 @@
 
-  $font-stack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  $font-size: 16px;
+  $font-stack: 'Montserrat', sans-serif;
+  $font-size: 14px;
   $line-height: 1.5;
   $font-weight: 400;
-  $primary-color: #242424;
 
-
+  $color-light-grey: #c7cad1;
+  $color-grey: #8b8b8b;
+  $color-black: #000;
+  $color-red: #cd0000;
+  $color-white: #fff;
+  $color-green: #73db43;
+  $color-yellow: #ebb428;
 
 body {
-  .container{
-    margin: 0 auto;
-    padding: 100px 0;
-  }
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $font-stack;
+    font-size: $font-size;
 }
 
