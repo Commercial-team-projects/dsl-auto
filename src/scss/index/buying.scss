@@ -1,0 +1,61 @@
+@import "../mixins/media_mixin.scss";
+
+
+.buying-proccess {
+}
+
+.container {
+}
+
+.banner {
+    width: 371px;
+    border: 1px dashed salmon;
+}
+
+.proccess-list {
+    display: flex;
+    flex-direction: row;
+    border: 1px dashed tomato;
+    @include _1280{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+}
+
+.proccess-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    
+    @include _1280{
+        margin-bottom: 33px; 
+
+    }
+}
+.process-wrapper {
+    @include _1280{
+
+    }
+}
+.proccess-icon {
+    @include _1280{
+        margin-bottom: 17px;
+    }
+}
+.proccess-title {
+    font-size: 14px;
+    font-weight: 500;
+    @include _1280{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.proccess-description {
+    font-size: 14px;
+    font-weight: 500;
+    
+    @include _1280{
+        font-size: 12px;
+    }
+}
