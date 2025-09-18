@@ -3,6 +3,7 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import { NodePackageImporter } from 'sass-embedded';
 
 export default defineConfig(({ command }) => {
   return {
@@ -44,5 +45,13 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern', // Use the modern Sass API
+          importers: [new NodePackageImporter()], // For resolving node_modules imports
+        },
+      },
+    },
   };
 });
