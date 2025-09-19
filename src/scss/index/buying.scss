@@ -1,25 +1,38 @@
 @import "../mixins/media_mixin.scss";
+@import "../../scss/base.scss";
 
-
-.buying-proccess {
+.section-buying-proccess {
+    padding-top: 33px;
+    padding-bottom: 72px;
 }
 
-.container {
+.buying-proccess {
+    @include _1280 {
+        display: flex;
+        gap: 41px;
+    }
 }
 
 .banner {
     width: 371px;
-    border: 1px dashed salmon;
+    border-radius: 10px;
+    display: none;
+
+    @include _1280 {
+        display: block;
+    }
 }
 
 .proccess-list {
     display: flex;
-    flex-direction: row;
-    border: 1px dashed tomato;
-    @include _1280{
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include _1280 {
         flex-direction: row;
         flex-wrap: wrap;
-        
+        row-gap: 56px;
+        column-gap: 56px;
     }
 }
 
@@ -27,35 +40,91 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 24px;
-    
-    @include _1280{
-        margin-bottom: 33px; 
 
+    @include _1280 {
+        margin-bottom: 33px;
     }
 }
+
 .process-wrapper {
-    @include _1280{
+    width: 335px;
+    display: flex;
+    column-gap: 16px;
+    justify-self: center;
 
+    @include _1280 {
+        width: 159px;
+        flex-direction: column;
     }
 }
+
+.process-wrapper:last-child {
+    width: 335px;
+    border: 1px dashed $color-red;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @include _1280 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 159px;
+    }
+}
+
 .proccess-icon {
-    @include _1280{
+    min-width: 42px;
+    min-height: 42px;
+
+    @include _1280 {
         margin-bottom: 17px;
+        min-width: 50px;
+        min-height: 50px;
     }
 }
+
+.process-wrapper:last-child>.proccess-icon {
+    margin-bottom: 0px;
+    width: 31px;
+    height: 31px;
+
+    @include _1280 {
+        margin-bottom: 0px;
+        @include border-green;
+    }
+}
+
+.process-wrapper:last-child>.proccess-title {
+    margin-bottom: 0;
+
+    @include _1280 {
+        width: 97px;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+}
+
 .proccess-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    @include _1280{
-        font-size: 16px;
+    margin-bottom: 17px;
+
+    @include _1280 {
         font-weight: 700;
     }
 }
+
 .proccess-description {
     font-size: 14px;
     font-weight: 500;
-    
-    @include _1280{
+
+    @include _1280 {
         font-size: 12px;
     }
+}
+
+.proccess-icon-send {
+    fill: #C7CAD1;
 }
