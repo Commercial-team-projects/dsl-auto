@@ -18,7 +18,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "sass-embedded": "^1.92.1",
+    "sass-embedded": "^1.93.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

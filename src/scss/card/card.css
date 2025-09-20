@@ -1,0 +1,14 @@
+/* Common styles*/
+@import url("../reset.scss");
+@import url("../base.scss");
+@import url("../layout.scss");
+@import url("../container.scss");
+@import url("../header.scss");
+@import url("../breadcrumbs.scss");
+@import url("../mobile-menu.scss");
+@import url("../sidebar.scss");
+@import url("../callback.scss");
+@import url("../footer.scss");
+/* Catalog page */
+@import url("./gallery.scss");
+@import url("./recomendation.scss");/*# sourceMappingURL=card.css.map */
