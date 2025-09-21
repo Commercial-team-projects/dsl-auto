@@ -175,7 +175,7 @@
   }
   .popular-cars-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .popular-cars-box {
     display: flex;
@@ -198,6 +198,10 @@
     gap: 8px;
     margin-bottom: 0;
   }
+  .cars-tech-property,
+  .cars-transmission-property {
+    font-size: 14px;
+  }
   .popular-cars-transmission {
     padding-top: 44px;
     gap: 8px;
@@ -205,6 +209,7 @@
   .popular-cars-shop {
     margin-left: auto;
     margin-right: 17px;
+    padding-top: 42px;
   }
   .popular-cars-more {
     display: block;
