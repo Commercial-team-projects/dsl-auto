@@ -1,1 +1,47 @@
-/*# sourceMappingURL=sidebar.css.map */
+@media screen and (max-width: 767px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+.logo-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.logo-link {
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.sidebar-container {
+  padding: 28px 26px;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-list-item {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 290px;
+  margin-bottom: 0;
+}
+
+.socials > a {
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=sidebar.css.map */
