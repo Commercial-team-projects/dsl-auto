@@ -1,0 +1,215 @@
+.popular {
+  padding-top: 544px;
+  background-color: #fff;
+}
+.popular-status {
+  margin-bottom: 28px;
+}
+.popular-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.popular-status-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.popular-status-subscription {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.popular-status-radio.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  pointer-events: none;
+}
+.status-selection-custom {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: block;
+  cursor: pointer;
+}
+.status-selection-custom {
+  &:hover,
+  &:focus {
+    border: 1px solid #cd0000;
+  }
+}
+.popular-status-radio:checked {
+  + .popular-status-subscription {
+    > .status-selection-custom {
+      border: 4px solid #cd0000;
+    }
+  }
+}
+.popular-cars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.popular-cars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.popular-cars-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 15px;
+}
+.popular-cars-box {
+  &::after {
+    content: '';
+    display: block;
+    border: 1px solid #e7e7e7;
+    width: 287px;
+    height: 0;
+    margin: 16px 0;
+  }
+}
+.popular-cars-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.popular-cars-photo {
+  border-radius: 2px;
+}
+.popular-cars-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  line-height: normal;
+}
+.popular-cars-link {
+  &:hover {
+    color: #cd0000;
+  }
+}
+.popular-cars-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+  line-height: normal;
+}
+.cars-tech-property,
+.cars-transmission-property {
+  font-weight: 500;
+  font-size: 16px;
+}
+.cars-tech-property >,
+.cars-transmission-property > {
+  span {
+    color: #8b8b8b;
+  }
+}
+.popular-cars-transmission {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.popular-cars-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cars-shop-city {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8b8b8b;
+}
+.cars-shop-price {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+.cars-shop-status {
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+}
+.cars-shop-status.in-stock,
+.cars-shop-status.to-order {
+  border-radius: 35px;
+  padding: 8px 16px;
+  max-width: fit-content;
+}
+.cars-shop-status.in-stock {
+  background-color: #73db43;
+}
+.cars-shop-status.to-order {
+  background-color: #ebb428;
+}
+.popular-cars-more {
+  display: block;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+  border-radius: 4px;
+  padding: 16px;
+  width: 335px;
+  height: 53px;
+  background-color: #f4f4f4;
+  border: none;
+}
+@media only screen and (min-width: 1280px) {
+  .popular {
+    padding-top: 135px;
+  }
+  .popular-status {
+    margin-bottom: 24px;
+    padding-left: 15px;
+  }
+  .popular-cars-item {
+    display: flex;
+    align-items: center;
+  }
+  .popular-cars-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 49px;
+  }
+  .popular-cars-main {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .popular-cars-box::after {
+    content: '';
+    display: none;
+  }
+  .popular-cars-alone {
+    padding-top: 8px;
+  }
+  .popular-cars-tech {
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .popular-cars-transmission {
+    padding-top: 44px;
+    gap: 8px;
+  }
+  .popular-cars-shop {
+    margin-left: auto;
+    margin-right: 17px;
+  }
+  .popular-cars-more {
+    display: block;
+    padding: 6px 16px;
+    width: 100%;
+    height: 42px;
+  }
+}
