@@ -1,26 +1,17 @@
 @import './base.scss';
-@import './container.scss';
-@import './reset.scss';
+@import './mixins/media_mixin.scss';
 
 .header-container {
   background-color: $color-white;
 }
+
 .mobile-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  //   background-color: $color-white;
 }
 
-.container {
-}
-.header-wrapper {
-}
-.paragraph {
-}
-.mobile-container {
-}
 .logo-link {
   font-weight: 700;
   font-size: 34px;
@@ -29,15 +20,12 @@
   align-items: center;
   gap: 13px;
 }
-.mobile-icon {
-  width: 40px;
-  height: 40px;
-}
+
 .mobile-btn {
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #1f1f1f;
+  background-color: $color-dark-grey;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -47,13 +35,13 @@
   fill: $color-white;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 1279px) {
   .header-wrapper {
     display: none;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@include _1280 {
   .mobile-container {
     display: none;
   }

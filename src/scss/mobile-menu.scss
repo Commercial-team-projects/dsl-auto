@@ -12,6 +12,18 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: opacity 250ms ease, transform 1ms ease;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: scale(1);
+  }
 
   @include _1280 {
     display: none;
@@ -38,10 +50,18 @@
       font-weight: 600;
       font-size: 16px;
       color: $color-black;
+
+      &:hover,
+      &:focus {
+        color: $color-red;
+      }
     }
   }
+
   &-nav {
     flex-grow: 0.5;
+    overflow-y: auto;
+    scroll-behavior: smooth;
   }
 
   &-phone {
