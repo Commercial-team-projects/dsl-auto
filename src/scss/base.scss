@@ -1,3 +1,5 @@
+@import "../mixins/media_mixin.scss";
+@import "../mixins/buttons.scss";
 
   $font-stack: 'Montserrat', sans-serif;
   $font-size: 14px;
@@ -6,6 +8,7 @@
 
   $color-light-grey:#c7cad1;
   $color-grey:#8b8b8b;
+  $color-dark-grey:#2C2C2C;
   $color-black:#000;
   $color-red: #cd0000;
   $color-white: #fff;
@@ -19,3 +22,45 @@ body {
     font-size: $font-size;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.more {
+  font-size: 13px;
+  font-weight: 500;
+  color: $color-dark-grey;
+}
+
+.tab {
+}
+.tab-title {
+}
+
+.btn {
+  line-height: 1.4;
+  background: $color-red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-main {
+  @include button;
+  background: $color-green;
+}
+.btn-secondary {
+  @include button;
+  background: $color-yellow;
+}
+
+.list-item-title {
+}
+.list-item-text {
+}
+
+.box {}

@@ -14,7 +14,7 @@
 
 .proccess-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 1px dashed tomato;
     @include _1280{
         flex-direction: row;
