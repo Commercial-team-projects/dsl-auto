@@ -8,13 +8,8 @@
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
+  min-height: 100%;
   width: 200px;
-  z-index: 1000;
-  overflow-y: auto;
 }
 
 .logo-link-sidebar {
@@ -26,9 +21,8 @@
 }
 
 .sidebar-container {
-  position: static;
   padding: 28px 26px;
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
