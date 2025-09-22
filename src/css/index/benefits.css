@@ -58,21 +58,33 @@
 @media only screen and (min-width: 1280px) {
   .benefit-title {
     text-align: center;
+
+    margin-bottom: 28px;
   }
   .benefit-list {
+    flex-direction: row;
+    width: 100%;
+    gap: 56px;
   }
   .benefit-item {
+    width: 209px;
+    height: auto;
   }
   .benefit-wrapper {
+    flex-direction: column;
   }
   .benefit-icon {
+    /* margin-bottom: 16px; */
   }
 
   .benefit-content {
   }
 
   .benefit-item-title {
+    margin-bottom: 8px;
   }
   .benefit-item-text {
+    font-weight: 500;
+    font-size: 12px;
   }
 }
