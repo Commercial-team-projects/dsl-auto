@@ -1,12 +1,6 @@
-@import './base.scss';
-@import './container.scss';
-@import './reset.scss';
-
 .hero-container {
   width: 100%;
-  min-width: 1200px;
   height: 100%;
-  min-height: 600px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -19,13 +13,13 @@
   margin: 0 auto;
 }
 
-// @media (min-resolution: 2dppx) {
-//   .hero-container {
-//     background-image: linear-gradient(
-//         to bottom,
-//         rgba(46, 47, 66, 0.7),
-//         rgba(46, 47, 66, 0.7)
-//       ),
-//       url(../img/main/hero/desktop/2x/desk-banner.webp);
-//   }
-// }
+@media (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/main/hero/desktop/2x/desk-banner.webp);
+  }
+}
