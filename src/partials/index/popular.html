@@ -1,3 +1,216 @@
-<section class="">
-  <div class="container"></div>
+<section class="popular">
+  <div class="container">
+    <div class="popular-status">
+      <h2 class="popular-title">Популярні автомобілі</h2>
+      <div class="popular-status-box">
+        <div class="popular-status-selection">
+          <input
+            class="popular-status-radio visually-hidden"
+            type="radio"
+            name="choose"
+            id="all"
+            value="all"
+            checked
+          />
+          <label class="popular-status-subscription" for="all">
+            <span class="status-selection-custom"></span>Будь-які</label
+          >
+        </div>
+        <div class="popular-status-selection">
+          <input
+            class="popular-status-radio visually-hidden"
+            type="radio"
+            name="choose"
+            id="access"
+            value="access"
+          />
+          <label class="popular-status-subscription" for="access">
+            <span class="status-selection-custom"></span>В наявності</label
+          >
+        </div>
+        <div class="popular-status-selection">
+          <input
+            class="popular-status-radio visually-hidden"
+            type="radio"
+            name="choose"
+            id="order"
+            value="order"
+          />
+          <label class="popular-status-subscription" for="order">
+            <span class="status-selection-custom"></span>Під замовлення</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="popular-cars">
+      <ul class="popular-cars-list">
+        <li class="popular-cars-item">
+          <div class="popular-cars-box">
+            <div class="popular-cars-main">
+              <picture class="popular-cars-image">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    /img/main/popular/desktop/1x/desk-honda.webp    1x,
+                    /img/main/popular/desktop/2x/desk-honda@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    /img/main/popular/mobile/1x/mob-honda.webp    1x,
+                    /img/main/popular/mobile/2x/mob-honda@2x.webp 2x
+                  "
+                />
+                <img
+                  class="popular-cars-photo"
+                  src="/img/main/popular/desktop/1x/desk-honda.webp"
+                  alt="honda"
+                />
+              </picture>
+              <div class="popular-cars-alone">
+                <h3 class="popular-cars-title">
+                  <a class="popular-cars-link" href="">Honda Fit</a>
+                </h3>
+                <ul class="popular-cars-tech">
+                  <li class="cars-tech-property">
+                    <span>Об'єм двигуна</span> 1,2 к.с.
+                  </li>
+                  <li class="cars-tech-property"><span>Рік</span> 2015 р.</li>
+                  <li class="cars-tech-property">
+                    <span>Пробіг</span> 34 000 км
+                  </li>
+                  <li class="cars-tech-property">Під повне мито</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="popular-cars-transmission">
+              <li class="cars-transmission-property">
+                <span>Привід</span> Задній
+              </li>
+              <li class="cars-transmission-property">
+                <span>КПП</span> Автомат
+              </li>
+            </ul>
+          </div>
+          <div class="popular-cars-shop">
+            <p class="cars-shop-city">Вартість у Києві</p>
+            <p class="cars-shop-price">630 000 &#8372;</p>
+            <p class="cars-shop-status in-stock">В наявності</p>
+          </div>
+        </li>
+        <li class="popular-cars-item">
+          <div class="popular-cars-box">
+            <div class="popular-cars-main">
+              <picture class="popular-cars-image">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    /img/main/popular/desktop/1x/desk-bmw.webp    1x,
+                    /img/main/popular/desktop/2x/desk-bmw@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    /img/main/popular/mobile/1x/mob-bmw.webp    1x,
+                    /img/main/popular/mobile/2x/mob-bmw@2x.webp 2x
+                  "
+                />
+                <img
+                  class="popular-cars-photo"
+                  src="/img/main/popular/desktop/1x/desk-bmw.webp"
+                  alt="bmw-x5"
+                />
+              </picture>
+              <div class="popular-cars-alone">
+                <h3 class="popular-cars-title">
+                  <a class="popular-cars-link" href="">BMW - X5 2005</a>
+                </h3>
+                <ul class="popular-cars-tech">
+                  <li class="cars-tech-property">
+                    <span>Об'єм двигуна</span> 230 к.с.
+                  </li>
+                  <li class="cars-tech-property"><span>Рік</span> 2005 р.</li>
+                  <li class="cars-tech-property">
+                    <span>Пробіг</span> 110 000 км
+                  </li>
+                  <li class="cars-tech-property">Під повне мито</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="popular-cars-transmission">
+              <li class="cars-transmission-property">
+                <span>Привід</span> Повний
+              </li>
+              <li class="cars-transmission-property">
+                <span>КПП</span> Автомат
+              </li>
+            </ul>
+          </div>
+          <div class="popular-cars-shop">
+            <p class="cars-shop-city">Вартість у Львові</p>
+            <p class="cars-shop-price">275 000 &#8372;</p>
+            <p class="cars-shop-status to-order">Під замовлення</p>
+          </div>
+        </li>
+        <li class="popular-cars-item">
+          <div class="popular-cars-box">
+            <div class="popular-cars-main">
+              <picture class="popular-cars-image">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    /img/main/popular/desktop/1x/desk-toyota.webp    1x,
+                    /img/main/popular/desktop/2x/desk-toyota@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    /img/main/popular/mobile/1x/mob-toyota.webp    1x,
+                    /img/main/popular/mobile/2x/mob-toyota@2x.webp 2x
+                  "
+                />
+                <img
+                  class="popular-cars-photo"
+                  src="/img/main/popular/desktop/1x/desk-toyota.webp"
+                  alt="toyota"
+                />
+              </picture>
+              <div class="popular-cars-alone">
+                <h3 class="popular-cars-title">
+                  <a class="popular-cars-link" href="">Toyota Prius</a>
+                </h3>
+                <ul class="popular-cars-tech">
+                  <li class="cars-tech-property">
+                    <span>Об'єм двигуна</span> 109 к.с.
+                  </li>
+                  <li class="cars-tech-property"><span>Рік</span> 2009 р.</li>
+                  <li class="cars-tech-property">
+                    <span>Пробіг</span> 57 000 км
+                  </li>
+                  <li class="cars-tech-property">Під повне мито</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="popular-cars-transmission">
+              <li class="cars-transmission-property">
+                <span>Привід</span> Передній
+              </li>
+              <li class="cars-transmission-property">
+                <span>КПП</span> Автомат
+              </li>
+            </ul>
+          </div>
+          <div class="popular-cars-shop">
+            <p class="cars-shop-city">Вартість у Лондоні</p>
+            <p class="cars-shop-price">310 000 &#8372;</p>
+            <p class="cars-shop-status in-stock">В наявності</p>
+          </div>
+        </li>
+      </ul>
+      <button class="popular-cars-more" type="button">Показати ще</button>
+    </div>
+  </div>
 </section>
