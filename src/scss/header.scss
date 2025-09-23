@@ -1,0 +1,64 @@
+@import './base.scss';
+@import './mixins/media_mixin.scss';
+
+.header-container {
+  background-color: $color-white;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-link {
+  font-weight: 700;
+  font-size: 34px;
+  color: $color-black;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.mobile-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $color-dark-grey;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mobile-btn-icon {
+  fill: $color-white;
+}
+
+@media (max-width: 1279px) {
+  .header-wrapper {
+    display: none;
+  }
+}
+
+@include _1280 {
+  .mobile-container {
+    display: none;
+  }
+  .header-wrapper {
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+
+    & > p {
+      width: 195px;
+    }
+  }
+}
+
+.header-phone {
+  font-weight: 700;
+  font-size: 22px;
+  color: $color-red;
+  font-style: normal;
+}
