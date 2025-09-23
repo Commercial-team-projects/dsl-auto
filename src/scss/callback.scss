@@ -9,7 +9,7 @@
     padding: 0 40px;
     // position: relative;
     // top: 50%;
-    // transform: translateY(-50%);
+    // transform: translateY(-125%);
     // z-index: 10;
   }
 
@@ -63,6 +63,12 @@
     background-color: #f1f1f1;
     border: none;
     font-size: 13px;
+    outline: 1px solid transparent;
+    transition: outline-color 250ms ease;
+
+    &:focus {
+      outline-color: $color-red;
+    }
   }
 
   &-button {
