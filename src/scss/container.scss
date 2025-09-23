@@ -1,3 +1,4 @@
+@import "./mixins/media_mixin.scss";
 
 .container {
   /* Styles for Mobile devices */
@@ -7,9 +8,8 @@
     padding: 0 20px;
   
   /* Styles for Desktop devices */
-  @media only screen and (min-width: 1280px) {
+  @include _1280 {
       max-width: 1080px;
       padding: 0 40px;
-      border: 1px dashed darkcyan;
     }
   }
