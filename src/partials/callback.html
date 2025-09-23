@@ -1,5 +1,36 @@
-<section class="">
-  <div class="container">
-    <p>callback</p>
+<section class="callback">
+  <div class="callback-container">
+    <p>Зворотній зв'язок</p>
+    <form class="callback-form" action="#" method="post">
+      <div class="callback-content">
+        <div class="callback-content-input">
+          <label class="callback-label" for="name"> Введіть ваше ім'я </label>
+          <input
+            class="callback-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ввести і'мя"
+            required
+          />
+        </div>
+        <div class="callback-content-input">
+          <label class="callback-label" for="phone">
+            Введіть ваш телефон
+          </label>
+          <input
+            class="callback-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+380"
+            required
+          />
+        </div>
+      </div>
+      <button class="callback-button" type="submit">
+        Замовити безкоштовну консультацію
+      </button>
+    </form>
   </div>
 </section>

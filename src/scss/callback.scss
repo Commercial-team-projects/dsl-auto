@@ -1,1 +1,95 @@
-.callback{}
+@import './base.scss';
+@import '../scss/mixins/media_mixin.scss';
+
+.callback {
+  padding: 0 20px;
+  background-color: transparent;
+
+  @include _1280 {
+    padding: 0 40px;
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // z-index: 10;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 6px;
+    box-shadow: 0 9px 34px 0 rgba(58, 68, 83, 0.24);
+    padding: 24px;
+    background-color: $color-white;
+
+    & > p {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    @include _1280 {
+      width: 387px;
+      margin: auto auto auto 43px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include _1280 {
+      gap: 24px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-input {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+  }
+  &-label {
+    font-size: 13px;
+  }
+  &-input {
+    border-radius: 2px;
+    padding: 12px 16px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 13px;
+  }
+
+  &-button {
+    border-radius: 4px;
+    padding: 16px;
+    width: 100%;
+
+    background-color: $color-red;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms ease;
+    align-self: center;
+
+    @include _1280 {
+      padding: 12px 16px;
+
+      font-weight: 500;
+      font-size: $font-size;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-dark-grey;
+    }
+  }
+}
