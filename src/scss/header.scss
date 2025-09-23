@@ -36,8 +36,19 @@
 }
 
 @media (max-width: 1279px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    background: $color-white;
+  }
   .header-wrapper {
     display: none;
+  }
+  body {
+    padding-top: 80px;
   }
 }
 

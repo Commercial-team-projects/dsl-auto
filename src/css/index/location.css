@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1280px) {
+  .location-title {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+
+  .location-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-dark-grey);
+    padding-bottom: 16px;
+  }
+
+  .location-box {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+    margin-bottom: 38px;
+  }
+
+  .location-list1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .location-list1-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .location-list1-icon {
+    fill: var(--color-grey);
+    margin-right: 10px;
+  }
+
+  .location-list1-item-phone {
+    font-weight: 500;
+    line-height: 1.9;
+    color: var(--color-red);
+    margin-right: 4px;
+  }
+
+  .location-list1-item-text {
+    color: var(--color-grey);
+  }
+
+  .location-list2 {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .location-list2-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-grey);
+  }
+
+  .location-mail-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .location-mail-icon {
+    fill: var(--color-grey);
+  }
+
+  .location-mail {
+    color: var(--color-red);
+  }
+
+  .location iframe {
+    width: 100%;
+    height: 428px;
+    max-width: 1040px;
+  }
+}
