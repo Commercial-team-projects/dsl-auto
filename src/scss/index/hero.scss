@@ -1,0 +1,45 @@
+@import '../mixins/media_mixin.scss';
+@import '../base.scss';
+
+.hero-container {
+  width: 100vw;
+  height: 100%;
+  min-height: 316px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.3),
+      rgba(46, 47, 66, 0.3)
+    ),
+    url(../../img/main/hero/mobile/1x/mob-banner.webp),
+    url(../../img/main/hero/mobile/2x/mob-banner@2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-white;
+    padding-top: 44px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+@include _1280 {
+  .hero-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.1),
+        rgba(46, 47, 66, 0.1)
+      ),
+      url(../../img/main/hero/desktop/1x/desk-banner.webp),
+      url(../../img/main/hero/desktop/2x/desk-banner@2x.webp);
+
+    & > h1 {
+      font-size: 42px;
+      text-align: center;
+      padding-top: 62px;
+      max-width: 666px;
+    }
+  }
+}

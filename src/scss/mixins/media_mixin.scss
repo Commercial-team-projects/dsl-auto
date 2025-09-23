@@ -1,0 +1,23 @@
+@mixin _1280 {
+    @media (min-width: 1280px){
+        @content;
+    }
+}
+@mixin _768 {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin _350{
+    @media (min-width: 350px){
+        @content;
+    }
+}
+
+@mixin border-red{
+    border: 1px dashed red;
+}
+
+@mixin border-green{
+    border: 1px dashed green;
+}
