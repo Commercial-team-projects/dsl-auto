@@ -1,21 +1,20 @@
+$font-stack: 'Montserrat', sans-serif;
+$font-size: 14px;
+$line-height: 1.5;
+$font-weight: 400;
 
-  $font-stack: 'Montserrat', sans-serif;
-  $font-size: 14px;
-  $line-height: 1.5;
-  $font-weight: 400;
-
-  $color-light-grey:#c7cad1;
-  $color-grey:#8b8b8b;
-  $color-black:#000;
-  $color-red: #cd0000;
-  $color-white: #fff;
-  $color-green: #73db43;
-  $color-yellow: #ebb428;
+$color-light-grey: #c7cad1;
+$color-grey: #8b8b8b;
+$color-black: #000;
+$color-red: #cd0000;
+$color-white: #fff;
+$color-green: #73db43;
+$color-yellow: #ebb428;
+$color-dark-grey: #1f1f1f;
 
 body {
-    background-color: $color-white;
-    color: $color-black;
-    font-family: $font-stack;
-    font-size: $font-size;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font-stack;
+  font-size: $font-size;
 }
-
