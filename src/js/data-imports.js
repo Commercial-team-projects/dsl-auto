@@ -1,5 +1,3 @@
-import { preview } from 'vite';
-
 const autos = [
   {
     id: 1,
@@ -88,7 +86,7 @@ const testimonials = [
     rate: 5,
     car: 'Toyota Allion',
     url: '',
-    preview: '',
+    prev: '',
   },
   {
     id: 2,
@@ -96,7 +94,7 @@ const testimonials = [
     rate: 4,
     car: 'Toyota Allion',
     url: '',
-    preview: '',
+    prev: '',
   },
   {
     id: 3,
@@ -104,7 +102,7 @@ const testimonials = [
     rate: 5,
     car: 'Toyota Allion',
     url: '',
-    preview: '',
+    prev: '',
   },
   {
     id: 4,
@@ -112,23 +110,23 @@ const testimonials = [
     rate: 5,
     car: 'Toyota Allion',
     url: '',
-    preview: '',
+    prev: '',
   },
 ];
 
 const reviews = [
   {
     id: 1,
-    url: 'Космический Shuttle | HONDA FIT SHUTTLE 2013',
-    preview: '/img/main/reviews/desktop/x1/Rectangle%208.png',
-    title: '',
+    url: '',
+    prev: '/img/main/reviews/desktop/x1/Rectangle%208.png',
+    title: 'Космический Shuttle | HONDA FIT SHUTTLE 2013',
     views: 391,
     ago: '3 недели назад',
   },
   {
     id: 1,
     url: '',
-    preview: '/img/main/reviews/desktop/x1/Rectangle%208.png',
+    prev: '/img/main/reviews/desktop/x1/Rectangle%208.png',
     title: 'Компактный минивен I Toyota Siena 2017 г.',
     views: 391,
     ago: '3 недели назад',
@@ -136,7 +134,7 @@ const reviews = [
   {
     id: 1,
     url: '',
-    preview: '/img/main/reviews/desktop/x1/Rectangle%208.png',
+    prev: '/img/main/reviews/desktop/x1/Rectangle%208.png',
     title: 'Спецтехника по-крупному | KATO KB1500R',
     views: 391,
     ago: '3 недели назад',
@@ -155,6 +153,6 @@ export function getTestimonials(car = '') {
   return testimonials;
 }
 
-export function getReviewss(car = '') {
+export function getReviews(car = '') {
   return reviews;
 }
