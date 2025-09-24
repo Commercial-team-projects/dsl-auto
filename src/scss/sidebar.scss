@@ -10,6 +10,7 @@
 .sidebar {
   min-height: 100%;
   width: 200px;
+  background-color: $color-sidebar-bg;
 }
 
 .logo-link-sidebar {
@@ -21,6 +22,8 @@
 }
 
 .sidebar-container {
+  position: sticky;
+  top: 0;
   padding: 28px 26px;
   width: 100%;
   display: flex;
@@ -34,14 +37,40 @@
   gap: 12px;
 
   &-item {
+    position: relative;
     font-weight: 600;
     font-size: 16px;
-    padding: 8px 0;
+    padding: 8px 26px;
     transition: color 250ms ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 3px;
+      height: 100%;
+      box-shadow: -3px 0 0 0 $color-grey;
+      opacity: 0;
+      transition: opacity 300ms ease, box-shadow 300ms ease;
+    }
 
     &:hover,
     &:focus {
-      color: $color-red;
+      color: $color-grey;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.current {
+      color: $color-grey;
+
+      &::after {
+        box-shadow: -3px 0 0 0 $color-red;
+        opacity: 1;
+      }
     }
   }
 }
