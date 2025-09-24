@@ -1,6 +1,7 @@
+@import '../base.scss';
 .popular {
   padding-top: 544px;
-  background-color: #fff;
+  background-color: $color-white;
 }
 .popular-status {
   margin-bottom: 28px;
@@ -12,12 +13,13 @@
 .popular-status-box {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 15px;
 }
 .popular-status-subscription {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 12px;
 }
 .popular-status-radio.visually-hidden {
   position: absolute;
@@ -45,13 +47,13 @@
 .status-selection-custom {
   &:hover,
   &:focus {
-    border: 1px solid #cd0000;
+    border: 1px solid $color-red;
   }
 }
 .popular-status-radio:checked {
   + .popular-status-subscription {
     > .status-selection-custom {
-      border: 4px solid #cd0000;
+      border: 4px solid $color-red;
     }
   }
 }
@@ -95,7 +97,7 @@
 }
 .popular-cars-link {
   &:hover {
-    color: #cd0000;
+    color: $color-red;
   }
 }
 .popular-cars-tech {
@@ -113,7 +115,7 @@
 .cars-tech-property >,
 .cars-transmission-property > {
   span {
-    color: #8b8b8b;
+    color: $color-grey;
   }
 }
 .popular-cars-transmission {
@@ -129,17 +131,17 @@
 .cars-shop-city {
   font-weight: 500;
   font-size: 14px;
-  color: #8b8b8b;
+  color: $color-grey;
 }
 .cars-shop-price {
   font-weight: 700;
   font-size: 24px;
-  color: #000;
+  color: $color-black;
 }
 .cars-shop-status {
   font-weight: 500;
   font-size: 13px;
-  color: #fff;
+  color: $color-white;
 }
 .cars-shop-status.in-stock,
 .cars-shop-status.to-order {
@@ -148,21 +150,21 @@
   max-width: fit-content;
 }
 .cars-shop-status.in-stock {
-  background-color: #73db43;
+  background-color: $color-green;
 }
 .cars-shop-status.to-order {
-  background-color: #ebb428;
+  background-color: $color-yellow;
 }
 .popular-cars-more {
   display: block;
   font-weight: 500;
   font-size: 17px;
-  color: #000;
+  color: $color-black;
   border-radius: 4px;
   padding: 16px;
   width: 335px;
   height: 53px;
-  background-color: #f4f4f4;
+  background-color: $color-links;
   border: none;
 }
 @media only screen and (min-width: 1280px) {
@@ -172,6 +174,12 @@
   .popular-status {
     margin-bottom: 24px;
     padding-left: 15px;
+  }
+  .popular-status-box {
+    gap: 24px;
+  }
+  .popular-status-subscription {
+    font-size: 14px;
   }
   .popular-cars-item {
     display: flex;
@@ -212,6 +220,7 @@
     padding-top: 42px;
   }
   .popular-cars-more {
+    font-size: 13px;
     display: block;
     padding: 6px 16px;
     width: 100%;
