@@ -1,0 +1,21 @@
+.information-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.information-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 895px;
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .information-subtitle {
+        font-size: 32px;
+        margin-bottom: 22px;
+    }
+}
