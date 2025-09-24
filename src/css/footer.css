@@ -1,18 +1,18 @@
 .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid blue;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid blue;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 1280px) {
-.footer-wrapper {
+  .footer-wrapper {
     flex-direction: row;
     gap: 150px;
     border: 1px solid blue;
     padding: 10px;
-}
+  }
 }
