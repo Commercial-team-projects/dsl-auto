@@ -1,13 +1,69 @@
-<section class="">
+<section class="pagination-section">
   <div class="container">
-    <ul class="pagination">
-      <li>-</li>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>-</li>
-    </ul>
+    <nav
+      class="pagination"
+      aria-label="Пагінація сторінок"
+      data-total-pages="34"
+      data-current-page="3"
+    >
+      <a
+        class="pagination-control pagination-control-prev"
+        href="?page=2"
+        aria-label="Попередня сторінка"
+        data-role="prev"
+      >
+        <svg class="pagination-icon">
+          <use href="/src/img/main/sprite.svg#icon-left"></use>
+        </svg>
+      </a>
+      <ul class="pagination-list" role="list">
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=1">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=2">2</a>
+        </li>
+        <li class="pagination-item">
+          <span class="pagination-link is-current" aria-current="page">3</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=4">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=5">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=6">6</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=7">7</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=8">8</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=9">9</a>
+        </li>
+        <li class="pagination-item pagination-item-ellipsis" aria-hidden="true">
+          <span class="pagination-ellipsis"
+            ><svg class="pagination-ellipsis-icon">
+              <use href="/src/img/main/sprite.svg#icon-ellipsis"></use>
+            </svg>
+          </span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=34">34</a>
+        </li>
+      </ul>
+      <a
+        class="pagination-control pagination-control-next"
+        href="?page=4"
+        aria-label="Наступна сторінка"
+        data-role="next"
+        ><svg class="pagination-icon" aria-hidden="true">
+          <use href="/src/img/main/sprite.svg#icon-right"></use>
+        </svg>
+      </a>
+    </nav>
   </div>
 </section>
