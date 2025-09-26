@@ -1,4 +1,4 @@
-const autos = [
+const cars = [
   {
     id: 1,
     model: 'Honda Fit',
@@ -122,22 +122,25 @@ const reviews = [
     title: 'Космический Shuttle | HONDA FIT SHUTTLE 2013',
     views: 391,
     ago: '3 недели назад',
+    carId: 1,
   },
   {
-    id: 1,
+    id: 2,
     url: '',
     prev: '/img/main/reviews/desktop/x1/Rectangle%208.png',
     title: 'Компактный минивен I Toyota Siena 2017 г.',
     views: 391,
     ago: '3 недели назад',
+    carId: 1,
   },
   {
-    id: 1,
+    id: 3,
     url: '',
     prev: '/img/main/reviews/desktop/x1/Rectangle%208.png',
     title: 'Спецтехника по-крупному | KATO KB1500R',
     views: 391,
     ago: '3 недели назад',
+    carId: 1,
   },
 ];
 
@@ -146,7 +149,7 @@ const statuses = ['В наличии', 'Под заказ'];
 let PER_PAGE = 3;
 
 export function getCars(req = '', page = 1, per_page = PER_PAGE) {
-  return autos;
+  return cars;
 }
 
 export function getTestimonials(car = '') {
