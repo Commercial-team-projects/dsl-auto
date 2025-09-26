@@ -416,17 +416,73 @@
   </div>
 </div>
 
-          <section class="">
+          <section class="pagination-section">
   <div class="container">
-    <ul class="pagination">
-      <li>-</li>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>-</li>
-    </ul>
+    <nav
+      class="pagination"
+      aria-label="Пагінація сторінок"
+      data-total-pages="34"
+      data-current-page="3"
+    >
+      <a
+        class="pagination-control pagination-control-prev"
+        href="?page=2"
+        aria-label="Попередня сторінка"
+        data-role="prev"
+      >
+        <svg class="pagination-icon">
+          <use href="/src/img/main/sprite.svg#icon-left"></use>
+        </svg>
+      </a>
+      <ul class="pagination-list" role="list">
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=1">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=2">2</a>
+        </li>
+        <li class="pagination-item">
+          <span class="pagination-link is-current" aria-current="page">3</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=4">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=5">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=6">6</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=7">7</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=8">8</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=9">9</a>
+        </li>
+        <li class="pagination-item pagination-item-ellipsis" aria-hidden="true">
+          <span class="pagination-ellipsis"
+            ><svg class="pagination-ellipsis-icon">
+              <use href="/src/img/main/sprite.svg#icon-ellipsis"></use>
+            </svg>
+          </span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="?page=34">34</a>
+        </li>
+      </ul>
+      <a
+        class="pagination-control pagination-control-next"
+        href="?page=4"
+        aria-label="Наступна сторінка"
+        data-role="next"
+        ><svg class="pagination-icon" aria-hidden="true">
+          <use href="/src/img/main/sprite.svg#icon-right"></use>
+        </svg>
+      </a>
+    </nav>
   </div>
 </section>
 
@@ -484,7 +540,7 @@
             height="34"
             aria-label="logo"
           >
-            <use href="/dsl-auto/assets/sprite-CMUYtOb8.svg#icon-logo"></use>
+            <use href="/dsl-auto/assets/sprite-C6E4iIyW.svg#icon-logo"></use>
           </svg>
           <span>DSL Auto</span>
         </a>
@@ -497,13 +553,13 @@
       <ul class="footer-contacts-list">
         <li class="footer-contacts-list-item">
           <svg class="" width="21" height="21">
-            <use href="/dsl-auto/assets/sprite-CMUYtOb8.svg#icon-whatsapp-phone"></use>
+            <use href="/dsl-auto/assets/sprite-C6E4iIyW.svg#icon-whatsapp-phone"></use>
           </svg>
           <a href="tel:+380680510202">+38 (068) 051 02 02</a>
         </li>
         <li class="footer-contacts-list-item">
           <svg class="" width="21" height="21">
-            <use href="/dsl-auto/assets/sprite-CMUYtOb8.svg#icon-whatsapp-phone"></use>
+            <use href="/dsl-auto/assets/sprite-C6E4iIyW.svg#icon-whatsapp-phone"></use>
           </svg>
           <a href="tel:+380680510202">+38 (068) 051 02 02</a>
         </li>
@@ -511,7 +567,7 @@
       <div class="footer-box">
         <div class="footer-mail-box">
           <svg class="footer-mail-icon" width="20" height="20">
-            <use href="/dsl-auto/assets/sprite-CMUYtOb8.svg#icon-email"></use>
+            <use href="/dsl-auto/assets/sprite-C6E4iIyW.svg#icon-email"></use>
           </svg>
           <a class="footer-mail" href="mailto:dslauto@gmail.com"
             >dslauto@gmail.com</a
@@ -524,7 +580,7 @@
             target="_blank"
           >
             <svg class="footer-location-icon" width="20" height="20">
-              <use href="/dsl-auto/assets/sprite-CMUYtOb8.svg#icon-location"></use>
+              <use href="/dsl-auto/assets/sprite-C6E4iIyW.svg#icon-location"></use>
             </svg>
             вул. Юлія Чигирина, 13, Харків
           </a>
