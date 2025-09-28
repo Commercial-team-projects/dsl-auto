@@ -14,7 +14,7 @@
  * @property {string} drive - car drive (???)
  * @property {string} vehicleType - type of vehicle|fuel
  * @property {number} engine - car drive (???)
- * @property {string} power - powewr pf car in hourse power (475л.с.)
+ * @property {number} power - powewr pf car in hourse power (к.с.)
  * @property {string} tx - tx(КПП) of car (Автомат)
  * @property {string} auction - auction presented the car
  * @property {number} rating - rating of ???
@@ -190,7 +190,7 @@ import reviews from './data/reviews.json' assert { type: 'json' };
 //   },
 // ];
 
-const statuses = ['У наявності', 'Під замовлення'];
+const statuses = ['В наявності', 'Під замовлення'];
 
 /**
  * get cars
