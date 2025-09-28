@@ -192,15 +192,34 @@ import reviews from './data/reviews.json' assert { type: 'json' };
 
 const statuses = ['В наявності', 'Під замовлення'];
 
+function classByCarStatus(carStatus) {
+  switch (carStatus) {
+    case 'В наявності':
+      return 'in-stock';
+    case 'Під замовлення':
+      return 'to-order';
+  }
+}
+
 /**
  * get cars
- * @param {string} req - rearch request - TODO
+ * @param {Object} req - rearch request | filter - TODO
  * @param {number} page - page number (1 by def)
  * @param {number} per_page - cars per page (10 by def)
  * @returns {Array<Car>} - cars matched the request. (pagination)
  */
-export function getCars(req = '', page = 1, per_page = 10) {
-  return cars.slice((page - 1) * per_page, page * per_page);
+export function getCars(req = {}, page = 1, per_page = 10) {
+  const carsFiltred = cars.filter(car => {
+    if (
+      req.status &&
+      req.status !== 'all' &&
+      classByCarStatus(car.status) !== req.status
+    ) {
+      return false;
+    }
+    return true;
+  });
+  return carsFiltred.slice((page - 1) * per_page, page * per_page);
 }
 
 /**
