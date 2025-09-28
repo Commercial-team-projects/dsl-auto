@@ -11,11 +11,12 @@ const reviewsList = document.querySelector('.reviews-list');
 
 const carsListMoreBtn = document.querySelector('.popular-cars-more');
 const statusOptionsContainer = document.querySelector('.popular-status-box');
+const pagesList = document.querySelector('.pagination-list');
 
 let filter = {};
 let TOTAL_CARS = 7;
 let cars_per_page = 3;
-let page = 1;
+let cars_page = 1;
 
 function classByCarStatus(carStatus) {
   switch (carStatus) {
@@ -28,7 +29,7 @@ function classByCarStatus(carStatus) {
 
 function loadCars() {
   try {
-    const cars = getCars(filter, page, cars_per_page);
+    const cars = getCars(filter, cars_page, cars_per_page);
     carsList.insertAdjacentHTML(
       'beforeend',
       cars
@@ -148,45 +149,78 @@ function loadReviews() {
 }
 
 function loadFirstCars() {
-  page = 1;
-  carsListMoreBtn.style.display = 'block';
+  cars_page = 1;
+  // carsListMoreBtn.style.display = 'block';
   carsList.innerHTML = '';
 
   loadCars();
 }
 
 function loadMoreCars() {
-  page++;
+  cars_page++;
 
-  if (page > TOTAL_CARS / cars_per_page) {
-    carsListMoreBtn.style.display = 'none';
+  if (cars_page > TOTAL_CARS / cars_per_page) {
+    // carsListMoreBtn.style.display = 'none';
   }
 
   loadCars();
 }
 
-carsListMoreBtn.addEventListener('click', event => {
-  loadMoreCars();
-});
+if (carsListMoreBtn) {
+  carsListMoreBtn.addEventListener('click', event => {
+    loadMoreCars();
+  });
+}
 
-statusOptionsContainer.addEventListener('click', event => {
-  if (!event.target.name === 'INPUT') {
-    return;
+if (statusOptionsContainer) {
+  statusOptionsContainer.addEventListener('click', event => {
+    if (!event.target.name === 'INPUT') {
+      return;
+    }
+
+    switch (event.target.value) {
+      case 'all':
+        filter.status = 'all';
+        break;
+      case 'access': // in-stock
+        filter.status = 'in-stock';
+        break;
+      case 'order': //to-order
+        filter.status = 'to-order';
+        break;
+    }
+    loadFirstCars(filter, cars_page, cars_per_page);
+  });
+}
+
+if (pagesList) {
+  function loadPages() {
+    pagesList.innerHTML = [1, 2, 3]
+      .map(
+        page => `<li class="pagination-item">
+          <a class="pagination-link" href="">${page}</a>
+        </li>`
+      )
+      .join('');
   }
 
-  switch (event.target.value) {
-    case 'all':
-      filter.status = 'all';
-      break;
-    case 'access': // in-stock
-      filter.status = 'in-stock';
-      break;
-    case 'order': //to-order
-      filter.status = 'to-order';
-      break;
-  }
-  loadFirstCars(filter, page, cars_per_page);
-});
+  pagesList.addEventListener('click', event => {
+    event.preventDefault();
+    if (!event.target.name === 'A' && event.target.text) {
+      return;
+    }
+    carsList.innerHTML = '';
+    cars_page = Number(event.target.text);
+    loadCars();
+  });
 
-loadReviews();
-loadFirstCars();
+  loadPages();
+}
+
+if (reviewsList) {
+  loadReviews();
+}
+
+if (carsList) {
+  loadFirstCars();
+}
