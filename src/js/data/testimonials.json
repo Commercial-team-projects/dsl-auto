@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "author": "Генадий Сергеевич",
+    "rate": 5,
+    "car": "Toyota Allion",
+    "url": ""
+  },
+  {
+    "id": 2,
+    "author": "Ольга Архипова",
+    "rate": 4,
+    "car": "Toyota Allion",
+    "url": ""
+  },
+  {
+    "id": 3,
+    "author": "Николай Евгеньевич",
+    "rate": 5,
+    "car": "Toyota Allion",
+    "url": ""
+  },
+  {
+    "id": 4,
+    "author": "Роман Юрьевич",
+    "rate": 5,
+    "car": "Toyota Allion",
+    "url": ""
+  }
+]

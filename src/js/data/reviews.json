@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Космический Shuttle | HONDA FIT SHUTTLE 2013",
+    "views": 391,
+    "ago": "3 недели назад"
+  },
+  {
+    "id": 2,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Компактный минивен I Toyota Siena 2017 г.",
+    "views": 391,
+    "ago": "3 недели назад",
+    "carId": 1
+  },
+  {
+    "id": 3,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Спецтехника по-крупному | KATO KB1500R",
+    "views": 391,
+    "ago": "3 недели назад",
+    "carId": 1
+  },
+  {
+    "id": 4,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Космический Shuttle | HONDA FIT SHUTTLE 2013",
+    "views": 391,
+    "ago": "3 недели назад"
+  },
+  {
+    "id": 5,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Компактный минивен I Toyota Siena 2017 г.",
+    "views": 391,
+    "ago": "3 недели назад",
+    "carId": 1
+  },
+  {
+    "id": 6,
+    "url": "",
+    "prev": "/img/main/reviews/desktop/x1/Rectangle%208.png",
+    "title": "Спецтехника по-крупному | KATO KB1500R",
+    "views": 391,
+    "ago": "3 недели назад",
+    "carId": 1
+  }
+]
