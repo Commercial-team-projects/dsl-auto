@@ -1,0 +1,15 @@
+@import '../base.scss';
+@import '../mixins/media_mixin.scss';
+.catalog-title {
+  font-size: 32px;
+  color: $color-black;
+  margin-bottom: 24px;
+}
+.catalog-title {
+  display: none;
+
+  @include _1280 {
+    display: block;
+  }
+}
+@import '../index/popular.scss';
