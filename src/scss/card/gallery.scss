@@ -1,4 +1,182 @@
+@import "../mixins/media_mixin.scss";
+@import "../../scss/base.scss";
+
+
+.title-wrapper{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.car-title{
+    font-size: 24;
+    @include _1280{
+        font-size: 32px;
+    }
+}
+
+.in-stock{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.gallery-wrapper{
+    margin-bottom: 24px;
+}
+
+.gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    @include _1280{
+        flex-direction: row;
+        column-gap: 8px;
+    }
+}
+.gallery-item{
+    @include _1280{
+        flex-direction: row;
+        width: 300px;
+    }
+    
+}
+.tabs{
+    margin-bottom: 26px;
+}
+.tabs-list {
+    display: flex;
+    column-gap: 28px;
+}
+
+.buying-wrapper{
+    display: flex;
+    flex-direction: column;
+    @include _1280{
+        flex-direction: row;
+    }
+}
+.tab1-characteristics{
+    display: flex;
+    flex-direction: column;
+    @include _1280{
+        flex-direction: row;
+    }
+}
+.row1, .row2{
+    width: 378px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;    
+}
+.characteristic{
+    color: $color-grey;
+}
+.characteristic-value{
+    color: $color-black;
+    font-weight: 500;
+}
+
+.tab2-additional-info{
+    display: none;
+}
+
+.tab3-reviews{
+    display: none;
+}
+
+.info{
+    display: flex;
+    margin-bottom: 28px;
+}
+
 .additional-info-paragraph{
     margin-top: 32px;
     border: 1px dashed salmon;
+}
+
+.buying-block{
+    padding: 16px 0;
+    @include _1280{
+        padding: 0;
+    }
+}
+.buying-block-title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.buying-block-price{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+.buying-block-price-descr{
+    font-size: 12px;
+    color: $color-grey;
+    margin-bottom: 32px;
+}
+
+.consult-button {
+  font-weight: 500;
+  font-size: 18px;
+  color: $color-white;
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 287px;
+  background-color: $color-red;
+  border: none;
+  margin-bottom: 16px;
+  border: 1px solid $color-red;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #f1f1f1;
+    color: $color-red;
+    border: 1px solid $color-red;
+    box-shadow: inset 0 0 3px 0 rgba(255, 53, 53, 0.3);
+  }
+
+  @include _1280 {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 16px 24px;
+    width: 233px;
+  }
+}
+
+.consult-button:active {
+  border: 1px solid #d08f8f;
+  box-shadow: inset 0 0 16px 0 rgba(255, 53, 53, 0.3);
+}
+
+.make-order-button {
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  padding: 14px 24px;
+  width: 287px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color-red;
+  background: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include _1280 {
+    font-size: 12px;
+    padding: 14px 24px;
+    width: 233px;
+  }
+  &:focus,
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+    border: 1px solid $color-red;
+    box-shadow: inset 0 0 3px 0 rgba(255, 53, 53, 0.3);
+  }
 }
