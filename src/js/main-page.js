@@ -18,6 +18,10 @@ let TOTAL_CARS = 7;
 let cars_per_page = 3;
 let cars_page = 1;
 
+function getPages(total, per_page) {
+  return Math.ceil(total / per_page);
+}
+
 function classByCarStatus(carStatus) {
   switch (carStatus) {
     case 'В наявності':
@@ -181,29 +185,33 @@ if (statusOptionsContainer) {
     switch (event.target.value) {
       case 'all':
         filter.status = 'all';
+        loadPages();
         break;
       case 'access': // in-stock
         filter.status = 'in-stock';
+        loadPages(2);
         break;
       case 'order': //to-order
         filter.status = 'to-order';
+        loadPages(1);
         break;
     }
+    cars_page = 1;
     loadFirstCars(filter, cars_page, cars_per_page);
   });
 }
 
-if (pagesList) {
-  function loadPages() {
-    pagesList.innerHTML = [1, 2, 3]
-      .map(
-        page => `<li class="pagination-item">
+function loadPages(pages = getPages(TOTAL_CARS, cars_per_page)) {
+  pagesList.innerHTML = Array.from({ length: pages }, (_, i) => i + 1)
+    .map(
+      page => `<li class="pagination-item">
           <a class="pagination-link" href="">${page}</a>
         </li>`
-      )
-      .join('');
-  }
+    )
+    .join('');
+}
 
+if (pagesList) {
   pagesList.addEventListener('click', event => {
     event.preventDefault();
     if (!event.target.name === 'A' && event.target.text) {
