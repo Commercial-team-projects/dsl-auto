@@ -10,7 +10,6 @@
 @import url('./layout.css');
 @import url('./container.css');
 
-
 @import url('./header.css');
 @import url('./mobile-menu.css');
 @import url('./index/filter.css');
@@ -33,6 +32,7 @@
 /* Catalog page */
 /* @import url('./catalog/car-list.css');
 @import url('./catalog/pagination.css'); */
+@import url('./catalog/pagination.scss');
 
 /* Card page */
 @import url('./card/gallery.css');
