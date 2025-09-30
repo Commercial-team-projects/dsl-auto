@@ -1,79 +1,138 @@
+.location-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.location-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-dark-grey);
+  margin-bottom: 16px;
+}
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.location-list1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location-list1-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.loc-l1-full {
+  flex: 0 0 100%;
+}
+
+.location-list1-icon {
+  fill: var(--color-grey);
+}
+
+.location-list1-item-phone {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--color-red);
+}
+
+.location-list1-item-text {
+  color: var(--color-grey);
+}
+
+.location-list1-text-part {
+  display: none;
+}
+
+.location-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location-list2-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 8px;
+  color: var(--color-grey);
+}
+
+.location-mail-box {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 8px;
+}
+.location-mail-icon {
+  fill: var(--color-grey);
+}
+
+.location-mail {
+  color: var(--color-red);
+}
+
+.location iframe {
+  width: 100%;
+  height: 521px;
+}
+
 @media only screen and (min-width: 1280px) {
-  .location-title {
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
-
-  .location-text {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.7;
-    color: var(--color-dark-grey);
-    margin-bottom: 16px;
-  }
-
   .location-box {
-    display: flex;
+    flex-direction: row;
     align-items: baseline;
     gap: 70px;
     margin-bottom: 38px;
   }
 
   .location-list1 {
-    display: flex;
-    flex-direction: column;
     gap: 4px;
   }
 
   .location-list1-item {
-    display: flex;
     align-items: center;
-    gap: 8px;
   }
 
-  .location-list1-icon {
-    fill: var(--color-grey);
+  .loc-l1-full {
+    flex: 1;
+  }
+
+  .location-list1-text-part {
+    display: inline;
+  }
+
+  .location-list1-text-part::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
   }
 
   .location-list1-item-phone {
-    font-weight: 500;
-    line-height: 1.9;
-    color: var(--color-red);
-  }
-
-  .location-list1-item-text {
-    color: var(--color-grey);
+    font-size: 14px;
   }
 
   .location-list2 {
-    display: flex;
-    flex-direction: column;
     gap: 4px;
   }
 
   .location-list2-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--color-grey);
+    font-size: 14px;
   }
 
   .location-mail-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .location-mail-icon {
-    fill: var(--color-grey);
-  }
-
-  .location-mail {
-    color: var(--color-red);
+    font-size: 14px;
   }
 
   .location iframe {
-    width: 100%;
     height: 428px;
   }
 }
