@@ -1,0 +1,121 @@
+.contactus {
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.contactus-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.25);
+  transition: opacity 350ms ease-in-out, visibility 350ms ease-in-out;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.modal-contactus {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 6px;
+  box-shadow: 0 9px 34px 0 rgba(58, 68, 83, 0.24);
+  padding: 24px;
+  background-color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-contactus-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color black);
+}
+
+.contactus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.contactus-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contactus-group-textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contactus-label {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contactus-input {
+  margin-top: 9px;
+  border-radius: 2px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 13px;
+  outline: 1px solid transparent;
+  transition: outline-color 250ms ease;
+}
+
+.contactus-input-textarea {
+  margin-top: 9px;
+  width: 100%;
+
+  /* height: 100%; */
+  border-radius: 2px;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 13px;
+  outline: 1px solid transparent;
+  transition: outline-color 250ms ease;
+  min-height: 111px;
+}
+
+.contactus-send-button {
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+  background-color: #cd0000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+  align-self: center;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contactus {
+    /* max-width: 387px; */
+  }
+
+  .modal-contactus {
+    max-width: 387px;
+  }
+}
