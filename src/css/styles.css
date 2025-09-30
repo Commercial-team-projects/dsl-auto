@@ -10,14 +10,16 @@
 @import url('./layout.css');
 @import url('./container.css');
 
-
 @import url('./header.css');
 @import url('./mobile-menu.css');
 @import url('./index/filter.css');
 @import url('./sidebar.css');
 @import url('./index/location.css');
 @import url('./callback.css');
+@import url('./modal-contactus.css');
 @import url('./footer.css');
+@import url('./feedback.css');
+
 
 /* Index page */
 
@@ -33,6 +35,7 @@
 /* Catalog page */
 /* @import url('./catalog/car-list.css');
 @import url('./catalog/pagination.css'); */
+@import url('./catalog/pagination.scss');
 
 /* Card page */
 @import url('./card/gallery.css');
