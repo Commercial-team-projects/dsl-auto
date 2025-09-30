@@ -231,8 +231,8 @@ export function getCarInfo(carId) {
   return cars.find(car => car.id === carId);
 }
 
-export function getTestimonials(car = '', page = 1, per_page = 5) {
-  return reviews.splice((page - 1) * per_page, page * per_page);
+export function getTestimonials(car = '', page = 1, per_page = 4) {
+  return testimonials.splice((page - 1) * per_page, page * per_page);
 }
 
 /**

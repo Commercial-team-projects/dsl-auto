@@ -13,6 +13,9 @@ const carsListMoreBtn = document.querySelector('.popular-cars-more');
 const statusOptionsContainer = document.querySelector('.popular-status-box');
 const pagesList = document.querySelector('.pagination-list');
 
+const testimonialsListMoreBtn = document.querySelector('.button-comments');
+let testimonials_page = 1;
+
 let filter = {};
 let TOTAL_CARS = 7;
 let cars_per_page = 3;
@@ -99,26 +102,67 @@ function loadCars() {
 function loadTestimonials() {
   try {
     const testimonials = getTestimonials();
-    testimonialsList.innerHTML = testimonials
-      .map(
-        review => `<li class="review">
-        <div class="review-image-container">
-          <img
-            class="review-image"
-            src="${review.prev}"
-            alt="${review.title}"
-          />
-        </div>
-        <div class="review-desc">
-          <h3 class="review-title">${review.title}</h3>
-          <ul class="review-info-list">
-            <li class="review-info">${review.views} просмотр</li>
-            <li class="review-info">${review.ago}</li>
+    testimonialsList.insertAdjacentHTML(
+      'beforeend',
+      testimonials
+        .map(
+          testimonial => `<li class="comments-list-item">
+        <div class="comments-video-wrapper">
+          <iframe width="202" height="134" src="${testimonial.url}" frameborder="0" title="Відео-відгук Тимура" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+          </iframe>
+          <ul class="comments-stars-list">
+            <li class="comments-stars-item">
+              <svg class="comments-star-icon" width="16" height="16">
+                <use href="/img/main/sprite.svg#icon-star-fill"></use>
+              </svg>
+            </li>
+            <li class="comments-stars-item">
+              <svg class="comments-star-icon" width="16" height="16">
+                <use href="/img/main/sprite.svg#icon-star-fill"></use>
+              </svg>
+            </li>
+            <li class="comments-stars-item">
+              <svg class="comments-star-icon" width="16" height="16">
+                <use href="/img/main/sprite.svg#icon-star-fill"></use>
+              </svg>
+            </li>
+            <li class="comments-stars-item">
+              <svg class="comments-star-icon" width="16" height="16">
+                <use href="/img/main/sprite.svg#icon-star-fill"></use>
+              </svg>
+            </li>
+            <li class="comments-stars-item">
+              <svg class="comments-star-icon" width="16" height="16">
+                <use href="/img/main/sprite.svg#icon-star-fill"></use>
+              </svg>
+            </li>
           </ul>
+          <h3 class="comments-person-name">${testimonial.author}</h3>
+          <p class="comments-car-type">${testimonial.car}</p>
         </div>
       </li>`
-      )
-      .join('');
+        )
+        .join('')
+    );
+    // .map(
+    //   review => `<li class="review">
+    //   <div class="review-image-container">
+    //     <img
+    //       class="review-image"
+    //       src="${review.prev}"
+    //       alt="${review.title}"
+    //     />
+    //   </div>
+    //   <div class="review-desc">
+    //     <h3 class="review-title">${review.title}</h3>
+    //     <ul class="review-info-list">
+    //       <li class="review-info">${review.views} просмотр</li>
+    //       <li class="review-info">${review.ago}</li>
+    //     </ul>
+    //   </div>
+    // </li>`
+    // )
+    // .join('');
   } catch (error) {
     console.log(error);
   }
@@ -168,6 +212,18 @@ function loadMoreCars() {
   }
 
   loadCars();
+}
+
+if (testimonialsList) {
+  loadTestimonials();
+}
+
+if (testimonialsListMoreBtn) {
+  testimonialsListMoreBtn.addEventListener('click', event => {
+    event.preventDefault();
+    testimonials_page++;
+    loadTestimonials('', testimonials_page);
+  });
 }
 
 if (carsListMoreBtn) {
