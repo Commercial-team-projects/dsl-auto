@@ -11,8 +11,7 @@
 }
 
 .feedback-icon {
-    fill: var(--color-red);
-    stroke: var(--color-red);
+    fill: var(--color-green);
     display: inline-block;
 }
 
