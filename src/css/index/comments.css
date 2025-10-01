@@ -62,11 +62,17 @@ iframe {
     padding: 16px;
     width: 335px;
     height: 53px;
-    background: var(--color-links);
+    background-color: var(--color-links);
     font-weight: 500;
     font-size: 17px;
     color: var(--color-black);
     text-align: center;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-comments:hover,
+.button-comments:focus {
+    background-color: var(--color-light-grey);
 }
 
 @media only screen and (min-width: 1280px) {
@@ -81,6 +87,7 @@ iframe {
       align-items: center;
       gap: 86px;
       margin-bottom: 50px;
+      overflow-x: hidden;
     }
 
     .button-comments {
