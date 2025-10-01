@@ -1,0 +1,27 @@
+@import './base.scss';
+@import './mixins/media_mixin.scss';
+
+.scroll-up-link {
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: $color-dark-grey;
+  border-radius: 7px 7px 0 0;
+  width: 45px;
+  height: 30px;
+  opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.scroll-up-icon {
+  transform: rotate(180deg);
+  fill: $color-white;
+}
