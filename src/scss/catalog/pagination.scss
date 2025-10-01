@@ -1,118 +1,120 @@
+@import './../base.scss';
+
 $bp-desktop: 1200px;
 $pagination-h: 32px;
 $pagination-icon-w: 36px;
 
 .pagination {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 @media (min-width: $bp-desktop) {
-    .pagination {
-        display: flex;
-        visibility: visible;
-        align-items: center;
-        width: 997px;
-        height: $pagination-h;
-        margin-top: 53px;
+  .pagination {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    width: 997px;
+    height: $pagination-h;
+    margin-top: 53px;
 
-        font-family: $font-stack;
-        font-size: $font-size;
-        line-height: $line-height;
-        font-weight: $font-weight;
-        color: $color-black;
+    font-family: $font-stack;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $color-black;
+  }
+
+  .pagination-control-prev,
+  .pagination-control-next {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $pagination-icon-w;
+    height: $pagination-h;
+    color: $color-light-grey;
+    text-decoration: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+      transform: translateY(-1px);
     }
 
-    .pagination-control-prev,
-    .pagination-control-next {
-        flex: 0 0 auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: $pagination-icon-w;
-        height: $pagination-h;
-        color: $color-light-grey;
-        text-decoration: none;
-        transition: opacity .15s ease, transform .15s ease;
-
-        &:hover {
-            transform: translateY(-1px);
-        }
-
-        &:active {
-            transform: translateY(0);
-        }
-
-        &.is-disabled,
-        &[aria-disabled='true'] {
-            opacity: .4;
-            pointer-events: none;
-            cursor: default;
-        }
-
-        .pagination-icon {
-            width: $pagination-icon-w;
-            height: $pagination-h;
-            // твой спрайт читает var(--color1)
-            --color1: #{$color-light-grey};
-        }
+    &:active {
+      transform: translateY(0);
     }
 
-    .pagination-list {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-inline: auto;
-        list-style: none;
-        padding: 0;
-        height: $pagination-h;
+    &.is-disabled,
+    &[aria-disabled='true'] {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: default;
     }
 
-    .pagination-item {
-        &-ellipsis {
-            .pagination-ellipsis {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: $pagination-h;
-                height: $pagination-h;
-
-                .pagination-ellipsis-icon {
-                    width: $pagination-icon-w;
-                    height: $pagination-h;
-                    --color2: #{$color-light-grey};
-                }
-            }
-        }
+    .pagination-icon {
+      width: $pagination-icon-w;
+      height: $pagination-h;
+      // твой спрайт читает var(--color1)
+      --color1: #{$color-light-grey};
     }
+  }
 
-    .pagination-link {
+  .pagination-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-inline: auto;
+    list-style: none;
+    padding: 0;
+    height: $pagination-h;
+  }
+
+  .pagination-item {
+    &-ellipsis {
+      .pagination-ellipsis {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: $pagination-h;
         height: $pagination-h;
-        border-radius: 50%;
-        font-size: $font-size;
-        font-weight: 500;
-        color: $color-black;
-        text-decoration: none;
 
-        &:hover {
-            background-color: $color-grey;
+        .pagination-ellipsis-icon {
+          width: $pagination-icon-w;
+          height: $pagination-h;
+          --color2: #{$color-light-grey};
         }
-
-        &:focus-visible {
-            outline: 2px solid $color-red;
-            outline-offset: 2px;
-        }
-
-        &.is-current,
-        &[aria-current='page'] {
-            background-color: $color-red;
-            color: $color-white;
-            pointer-events: none;
-            cursor: default;
-        }
+      }
     }
+  }
+
+  .pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $pagination-h;
+    height: $pagination-h;
+    border-radius: 50%;
+    font-size: $font-size;
+    font-weight: 500;
+    color: $color-black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-grey;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-red;
+      outline-offset: 2px;
+    }
+
+    &.is-current,
+    &[aria-current='page'] {
+      background-color: $color-red;
+      color: $color-white;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
 }
