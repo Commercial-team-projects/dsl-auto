@@ -213,20 +213,24 @@ if (statusOptionsContainer) {
     if (!event.target.name === 'INPUT') {
       return;
     }
+    let p;
 
     switch (event.target.value) {
       case 'all':
         filter.status = 'all';
-        loadPages();
+        p = 3;
         break;
       case 'access': // in-stock
         filter.status = 'in-stock';
-        loadPages(2);
+        p = 2;
         break;
       case 'order': //to-order
         filter.status = 'to-order';
-        loadPages(1);
+        p = 1;
         break;
+    }
+    if (pagesList) {
+      loadPages(p);
     }
     cars_page = 1;
     loadFirstCars(filter, cars_page, cars_per_page);
