@@ -13,11 +13,8 @@ const carsListMoreBtn = document.querySelector('.popular-cars-more');
 const statusOptionsContainer = document.querySelector('.popular-status-box');
 const pagesList = document.querySelector('.pagination-list');
 
-const testimonialsListMoreBtn = document.querySelector('.button-comments');
-let testimonials_page = 1;
-
 let filter = {};
-let TOTAL_CARS = 7;
+let cars_total = 7;
 let cars_per_page = 3;
 let cars_page = 1;
 
@@ -102,40 +99,27 @@ function loadCars() {
 function loadTestimonials() {
   try {
     const testimonials = getTestimonials();
+    testimonialsList.innerHTML = '';
     testimonialsList.insertAdjacentHTML(
       'beforeend',
       testimonials
         .map(
           testimonial => `<li class="comments-list-item">
         <div class="comments-video-wrapper">
-          <iframe width="202" height="134" src="${testimonial.url}" frameborder="0" title="Відео-відгук Тимура" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+          <iframe width="202" height="134" src="${
+            testimonial.url
+          }" frameborder="0" title="Відео-відгук Тимура" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
           </iframe>
           <ul class="comments-stars-list">
-            <li class="comments-stars-item">
+            ${[1, 2, 3, 4, 5]
+              .map(
+                star => `<li class="comments-stars-item">
               <svg class="comments-star-icon" width="16" height="16">
                 <use href="/img/main/sprite.svg#icon-star-fill"></use>
               </svg>
-            </li>
-            <li class="comments-stars-item">
-              <svg class="comments-star-icon" width="16" height="16">
-                <use href="/img/main/sprite.svg#icon-star-fill"></use>
-              </svg>
-            </li>
-            <li class="comments-stars-item">
-              <svg class="comments-star-icon" width="16" height="16">
-                <use href="/img/main/sprite.svg#icon-star-fill"></use>
-              </svg>
-            </li>
-            <li class="comments-stars-item">
-              <svg class="comments-star-icon" width="16" height="16">
-                <use href="/img/main/sprite.svg#icon-star-fill"></use>
-              </svg>
-            </li>
-            <li class="comments-stars-item">
-              <svg class="comments-star-icon" width="16" height="16">
-                <use href="/img/main/sprite.svg#icon-star-fill"></use>
-              </svg>
-            </li>
+            </li>`
+              )
+              .join('')}
           </ul>
           <h3 class="comments-person-name">${testimonial.author}</h3>
           <p class="comments-car-type">${testimonial.car}</p>
@@ -207,7 +191,7 @@ function loadFirstCars() {
 function loadMoreCars() {
   cars_page++;
 
-  if (cars_page > TOTAL_CARS / cars_per_page) {
+  if (cars_page > cars_total / cars_per_page) {
     // carsListMoreBtn.style.display = 'none';
   }
 
@@ -216,14 +200,6 @@ function loadMoreCars() {
 
 if (testimonialsList) {
   loadTestimonials();
-}
-
-if (testimonialsListMoreBtn) {
-  testimonialsListMoreBtn.addEventListener('click', event => {
-    event.preventDefault();
-    testimonials_page++;
-    loadTestimonials('', testimonials_page);
-  });
 }
 
 if (carsListMoreBtn) {
@@ -257,7 +233,8 @@ if (statusOptionsContainer) {
   });
 }
 
-function loadPages(pages = getPages(TOTAL_CARS, cars_per_page)) {
+function loadPages(pages = getPages(cars_total, cars_per_page)) {
+  // is-current
   pagesList.innerHTML = Array.from({ length: pages }, (_, i) => i + 1)
     .map(
       page => `<li class="pagination-item">
@@ -273,6 +250,8 @@ if (pagesList) {
     if (!event.target.name === 'A' && event.target.text) {
       return;
     }
+
+    event.target.classList.add('is-current');
     carsList.innerHTML = '';
     cars_page = Number(event.target.text);
     loadCars();
