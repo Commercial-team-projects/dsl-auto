@@ -70,7 +70,7 @@ export function getCarInfo(carId) {
   return cars.find(car => car.id === carId);
 }
 
-export function getTestimonials(car = '', page = 1, per_page = 4) {
+export function getTestimonials(page = 1, per_page = 4) {
   return testimonials.splice((page - 1) * per_page, page * per_page);
 }
 
