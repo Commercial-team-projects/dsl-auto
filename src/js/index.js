@@ -1,9 +1,6 @@
-import {
-  getCars,
-  getCarInfo,
-  getReviews,
-  getTestimonials,
-} from './data-imports';
+import '../main';
+import { getCars, getReviews, getTestimonials } from './data-imports';
+import { classByCarStatus } from './data-procesing';
 
 const carsList = document.querySelector('.popular-cars-list');
 const testimonialsList = document.querySelector('.comments-list');
@@ -11,25 +8,11 @@ const reviewsList = document.querySelector('.reviews-list');
 
 const carsListMoreBtn = document.querySelector('.popular-cars-more');
 const statusOptionsContainer = document.querySelector('.popular-status-box');
-const pagesList = document.querySelector('.pagination-list');
 
 let filter = {};
 let cars_total = 7;
 let cars_per_page = 3;
 let cars_page = 1;
-
-function getPages(total, per_page) {
-  return Math.ceil(total / per_page);
-}
-
-function classByCarStatus(carStatus) {
-  switch (carStatus) {
-    case 'В наявності':
-      return 'in-stock';
-    case 'Під замовлення':
-      return 'to-order';
-  }
-}
 
 function loadCars() {
   try {
@@ -95,7 +78,6 @@ function loadCars() {
   }
 }
 
-// ToDo: adopt to testimonials
 function loadTestimonials() {
   try {
     const testimonials = getTestimonials();
@@ -182,7 +164,6 @@ function loadReviews() {
 
 function loadFirstCars() {
   cars_page = 1;
-  // carsListMoreBtn.style.display = 'block';
   carsList.innerHTML = '';
 
   loadCars();
@@ -192,82 +173,35 @@ function loadMoreCars() {
   cars_page++;
 
   if (cars_page > cars_total / cars_per_page) {
-    // carsListMoreBtn.style.display = 'none';
   }
 
   loadCars();
 }
 
-if (testimonialsList) {
-  loadTestimonials();
-}
+carsListMoreBtn.addEventListener('click', event => {
+  loadMoreCars();
+});
 
-if (carsListMoreBtn) {
-  carsListMoreBtn.addEventListener('click', event => {
-    loadMoreCars();
-  });
-}
+statusOptionsContainer.addEventListener('click', event => {
+  if (!event.target.name === 'INPUT') {
+    return;
+  }
 
-if (statusOptionsContainer) {
-  statusOptionsContainer.addEventListener('click', event => {
-    if (!event.target.name === 'INPUT') {
-      return;
-    }
-    let p;
+  switch (event.target.value) {
+    case 'all':
+      filter.status = 'all';
+      break;
+    case 'access': // in-stock
+      filter.status = 'in-stock';
+      break;
+    case 'order': //to-order
+      filter.status = 'to-order';
+      break;
+  }
+  cars_page = 1;
+  loadFirstCars(filter, cars_page, cars_per_page);
+});
 
-    switch (event.target.value) {
-      case 'all':
-        filter.status = 'all';
-        p = 3;
-        break;
-      case 'access': // in-stock
-        filter.status = 'in-stock';
-        p = 2;
-        break;
-      case 'order': //to-order
-        filter.status = 'to-order';
-        p = 1;
-        break;
-    }
-    if (pagesList) {
-      loadPages(p);
-    }
-    cars_page = 1;
-    loadFirstCars(filter, cars_page, cars_per_page);
-  });
-}
-
-function loadPages(pages = getPages(cars_total, cars_per_page)) {
-  // is-current
-  pagesList.innerHTML = Array.from({ length: pages }, (_, i) => i + 1)
-    .map(
-      page => `<li class="pagination-item">
-          <a class="pagination-link" href="">${page}</a>
-        </li>`
-    )
-    .join('');
-}
-
-if (pagesList) {
-  pagesList.addEventListener('click', event => {
-    event.preventDefault();
-    if (!event.target.name === 'A' && event.target.text) {
-      return;
-    }
-
-    event.target.classList.add('is-current');
-    carsList.innerHTML = '';
-    cars_page = Number(event.target.text);
-    loadCars();
-  });
-
-  loadPages();
-}
-
-if (reviewsList) {
-  loadReviews();
-}
-
-if (carsList) {
-  loadFirstCars();
-}
+loadFirstCars();
+loadTestimonials();
+loadReviews();
