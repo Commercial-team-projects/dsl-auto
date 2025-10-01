@@ -1,6 +1,46 @@
 @import "../mixins/media_mixin.scss";
 @import "../../scss/base.scss";
 
+//  .tabs-container {
+//         width: 500px;
+//         margin: 20px auto;
+//     }
+
+//     /* Скрываем радиокнопки */
+//     .tabs-container input[type="radio"] {
+//         display: none;
+//     }
+
+//     /* Стили для меток (кнопок вкладок) */
+//     .tab-labels label {
+//         display: inline-block;
+//         padding: 10px 15px;
+//         border: 1px solid #ccc;
+//         cursor: pointer;
+//         margin-right: 5px;
+//         background-color: #f0f0f0;
+//     }
+
+//     /* Стили для активной вкладки */
+//     .tabs-container input[type="radio"]:checked + .tab-labels label {
+//         background-color: #ddd;
+//         font-weight: bold;
+//     }
+
+//     /* Стили для контента */
+//     .tab-content .content-panel {
+//         display: none; /* Скрываем все панели по умолчанию */
+//         padding: 20px;
+//         border: 1px solid #ccc;
+//     }
+
+//     /* Показываем нужную панель */
+//     .tabs-container #tab1:checked ~ .tab-content #content1,
+//     .tabs-container #tab2:checked ~ .tab-content #content2,
+//     .tabs-container #tab3:checked ~ .tab-content #content3 {
+//         display: block; /* Показываем панель, соответствующую выбранной вкладке */
+//     }
+
 
 .title-wrapper{
     display: flex;
@@ -35,6 +75,8 @@
         column-gap: 8px;
     }
 }
+
+
 .gallery-item{
     @include _1280{
         flex-direction: row;
@@ -47,7 +89,23 @@
 }
 .tabs-list {
     display: flex;
-    column-gap: 28px;
+    justify-content: space-between;
+}
+
+.tabs-list {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tabs-list::-webkit-scrollbar {
+   display: none;
+}
+.tab-item{
+    padding: 4px;
 }
 
 .buying-wrapper{
@@ -63,6 +121,9 @@
     @include _1280{
         flex-direction: row;
     }
+    
+    display: block;
+    display: none;
 }
 .row1, .row2{
     width: 378px;
@@ -79,11 +140,13 @@
 }
 
 .tab2-additional-info{
+    display: block;
     display: none;
 }
 
 .tab3-reviews{
     display: none;
+    display: block;
 }
 
 .info{
@@ -93,7 +156,6 @@
 
 .additional-info-paragraph{
     margin-top: 32px;
-    border: 1px dashed salmon;
 }
 
 .buying-block{
