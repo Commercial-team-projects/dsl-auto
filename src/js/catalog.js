@@ -95,31 +95,30 @@ function loadPages(pages = getPages(cars_total, cars_per_page)) {
         </li>`
     )
     .join('');
+  pagesList.children[0].children[0].classList.add('is-current');
 }
 
 statusOptionsContainer.addEventListener('click', event => {
   if (!event.target.name === 'INPUT') {
     return;
   }
-  let p;
+  let pagesOnStatus = 3;
 
   switch (event.target.value) {
     case 'all':
       filter.status = 'all';
-      p = 3;
+      pagesOnStatus = 3;
       break;
     case 'access': // in-stock
       filter.status = 'in-stock';
-      p = 2;
+      pagesOnStatus = 2;
       break;
     case 'order': //to-order
       filter.status = 'to-order';
-      p = 1;
+      pagesOnStatus = 1;
       break;
   }
-  if (pagesList) {
-    loadPages(p);
-  }
+  loadPages(pagesOnStatus);
   cars_page = 1;
   loadFirstCars(filter, cars_page, cars_per_page);
 });
@@ -130,6 +129,9 @@ pagesList.addEventListener('click', event => {
     return;
   }
 
+  for (const pageElement of pagesList.children) {
+    pageElement.children[0].classList.remove('is-current');
+  }
   event.target.classList.add('is-current');
   carsList.innerHTML = '';
   cars_page = Number(event.target.text);
