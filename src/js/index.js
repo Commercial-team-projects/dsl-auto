@@ -203,5 +203,5 @@ statusOptionsContainer.addEventListener('click', event => {
 });
 
 loadFirstCars();
-loadTestimonials();
+// loadTestimonials();
 loadReviews();
