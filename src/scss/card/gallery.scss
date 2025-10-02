@@ -6,10 +6,10 @@
 //         margin: 20px auto;
 //     }
 
-//     /* Скрываем радиокнопки */
-//     .tabs-container input[type="radio"] {
-//         display: none;
-//     }
+    /* Скрываем радиокнопки */
+    .tabs input[type="radio"] {
+        display: none;
+    }
 
 //     /* Стили для меток (кнопок вкладок) */
 //     .tab-labels label {
@@ -21,25 +21,25 @@
 //         background-color: #f0f0f0;
 //     }
 
-//     /* Стили для активной вкладки */
-//     .tabs-container input[type="radio"]:checked + .tab-labels label {
-//         background-color: #ddd;
-//         font-weight: bold;
-//     }
+    /* Стили для активной вкладки */
+    .tabs input[type="radio"]:checked + .tab-labels label {
+        background-color: #ddd;
+        font-weight: bold;
+    }
 
-//     /* Стили для контента */
-//     .tab-content .content-panel {
-//         display: none; /* Скрываем все панели по умолчанию */
-//         padding: 20px;
-//         border: 1px solid #ccc;
-//     }
+    /* Стили для контента */
+    .buying-wrapper .info {
+        display: none; /* Скрываем все панели по умолчанию */
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
 
-//     /* Показываем нужную панель */
-//     .tabs-container #tab1:checked ~ .tab-content #content1,
-//     .tabs-container #tab2:checked ~ .tab-content #content2,
-//     .tabs-container #tab3:checked ~ .tab-content #content3 {
-//         display: block; /* Показываем панель, соответствующую выбранной вкладке */
-//     }
+    /* Показываем нужную панель */
+    .tabs #tab1:checked ~ .info #tab1-characteristics,
+    .tabs #tab2:checked ~ .info #tab2-additional-info,
+    .tabs #tab3:checked ~ .info #tab3-reviews {
+        display: block; /* Показываем панель, соответствующую выбранной вкладке */
+    }
 
 
 .title-wrapper{
