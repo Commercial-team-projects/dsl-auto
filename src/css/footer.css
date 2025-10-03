@@ -1,72 +1,83 @@
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
   padding: 32px 20px;
+}
+
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 22px;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--color-grey);
+  width: 325px;
+  margin-bottom: 18px;
+}
+
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contacts-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: var(--color-grey);
+}
+
+.footer-mail-box {
+  display: none;
+}
+
+.footer-location-icon {
+  fill: var(--color-red);
+}
+
+.footer-location-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--color-grey);
+}
+
+.footer-copyright {
+  font-weight: 500;
+  line-height: 1.7;
+  font-size: 10px;
+  padding-bottom: 12px;
+  padding-left: 24px;
 }
 
 @media only screen and (min-width: 1280px) {
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 44px;
-  }
-
-  .footer-logo-link {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 22px;
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-
-  .footer-location-icon {
-    fill: var(--color-red);
-  }
-
-  .footer-location-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-    line-height: 1.7;
-    color: var(--color-grey);
-  }
-
-  .footer-text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.3;
-    color: var(--color-grey);
-    width: 325px;
-    margin-bottom: 18px;
-  }
-
-  .footer-copyright {
-    font-weight: 500;
-    line-height: 1.7;
-    font-size: 10px;
-    padding-bottom: 12px;
-    padding-left: 44px;
+    padding: 20px 0;
   }
 
   .footer-contacts-list {
-    display: flex;
-    flex-direction: column;
     gap: 4px;
     padding-top: 30px;
   }
 
   .footer-contacts-list-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 500;
-    line-height: 1.9;
-    color: var(--color-grey);
+    font-size: 14px;
   }
 
   .footer-box {
@@ -89,5 +100,10 @@
 
   .footer-mail {
     color: var(--color-grey);
+    font-weight: 500;
+  }
+
+  .footer-copyright {
+    padding-left: 0;
   }
 }
