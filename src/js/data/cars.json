@@ -1,7 +1,29 @@
 [
   {
     "id": 1,
-    "model": "BMW XM",
+    "title": "Audi A3 2017",
+    "model": "Audi A3",
+    "year": 2017,
+    "bodyType": "Седан",
+    "engine": "Бензиновий, 1.8 л",
+    "drive": "Передній",
+    "tx": "Автомат",
+    "dors": 4,
+    "color": "Сірий (Graphite Grey)",
+
+    "location": "США",
+    "benefits": [
+      "Надійний німецький бренд з преміальним рівнем збірки",
+      "Ідеальний баланс між комфортом і динамікою",
+      "Низька витрата пального — в середньому 7.2 л/100 км",
+      "Сучасна мультимедійна система з підтримкою Apple CarPlay / Android Auto",
+      "Високий рівень безпеки: 8 подушок, системи ESP та ABS",
+      "Хороший кліренс для міста і траси",
+      "Більш доступна ціна в порівнянні з аналогами на українському ринку"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A3 2017 — це компактний преміальний седан, який ідеально підходить для щоденного міського використання і комфортних поїздок на великі відстані. Дизайн моделі вирізняється стриманістю, елегантністю та фірмовим стилем Audi.\nЗавдяки турбованому двигуну 1.8 TFSI автомобіль демонструє динаміку, що приємно здивує навіть досвідченого водія. Комфортна підвіска, шумоізоляція салону та зручні сидіння створюють відчуття авто класом вище.\nЦе чудовий вибір для тих, хто цінує якість, німецький підхід до деталей та хоче отримати максимум від кожної поїздки. Ідеальний варіант “першого преміального авто” з розумною ціною та високою залишковою вартістю.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
@@ -76,606 +98,683 @@
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "Задній",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "В наявності",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 2,
-    "model": "BMW XM",
+    "title": "Audi A3 2017",
+    "model": "Audi A3",
+    "year": 2021,
+    "bodyType": "Седан",
+    "engine": "Бензиновий, 2.0 л TFSI",
+    "drive": "Повний (Quattro)",
+    "tx": "Роботизована (S tronic)",
+    "dors": 4,
+    "color": "Білий (Glacier White)",
+
+    "location": "США",
+    "benefits": [
+      "Нове покоління дизайну Audi: агресивний передній бампер, матрична оптика, цифрова панель",
+      "Повний привід Quattro — стабільність та безпека в будь-яку погоду",
+      "Турбований двигун 2.0 TFSI забезпечує розгін до 100 км/год менш ніж за 7 секунд",
+      "Преміальна акустика, адаптивний круїз-контроль, безключовий доступ",
+      "Низька витрата пального — в середньому до 6.5 л/100 км",
+      "Оновлена мультимедіа з голосовим управлінням та сенсорним екраном",
+      "Один з найкращих варіантів у співвідношенні ціна / якість на ринку пригону з США"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A3 2021 — це сучасний представник компактного преміум-класу, який отримав повне оновлення як у дизайні, так і в технологіях. Новий кузов виглядає елегантно та спортивно одночасно, а фірмове LED-освітлення одразу вирізняє авто серед інших.\nЗавдяки системі повного приводу Quattro та потужному двигуну, цей седан дарує задоволення від кожної поїздки. Підвіска ідеально налаштована як для міських доріг, так і для траси, а салон вражає якістю оздоблення та ергономікою.\nЦе авто для тих, хто хоче керувати не просто машиною, а справжнім технологічним партнером. Audi A3 — чудовий вибір як для першого авто преміум-класу, так і для водіїв, які вже знають толк у якості.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "Під замовлення",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 3,
-    "model": "BMW XM",
+    "title": "Audi A4 2017",
+    "model": "Audi A4",
+    "year": 2017,
+    "bodyType": "Седан",
+    "engine": "Бензиновий, 2.0 л TFSI",
+    "drive": "Повний (Quattro)",
+    "tx": "Автомат (Tiptronic)",
+    "dors": 4,
+    "color": "Сірий металлік",
+
+    "location": "США",
+    "benefits": [
+      "Класичний представник бізнес-сегменту — комфорт, престиж та динаміка",
+      "Потужний та економічний двигун 2.0 TFSI",
+      "Повний привід забезпечує стабільність на мокрій або слизькій дорозі",
+      "Просторий салон з якісними матеріалами оздоблення",
+      "Сучасна мультимедійна система з підтримкою Apple CarPlay та Android Auto",
+      "Високий рівень безпеки — численні подушки безпеки, системи допомоги водієві",
+      "Надійна підвіска, пристосована до наших доріг"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A4 2017 — це седан, який вдало поєднує строгий зовнішній вигляд, динаміку та комфорт. Він ідеально підходить для щоденного використання, ділових поїздок або сімейних подорожей. Модель має чітко налаштовану підвіску та збалансоване керування, а двигун TFSI дарує хорошу тягу з помірною витратою пального.\nЦе авто — чудовий варіант для тих, хто цінує німецьку якість, статус і комфорт, але при цьому не хоче переплачувати за нове авто з салону. Завдяки хорошій шумоізоляції та продуманій ергономіці — у дорозі відчуваєш себе максимально впевнено.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "В наявності",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 4,
-    "model": "BMW XM",
+    "title": "Audi A4 2019",
+    "model": "Audi A4",
+    "year": 2019,
+    "bodyType": "Седан",
+    "engine": "Бензиновий, 2.0 л TFSI",
+    "drive": "Повний (Quattro)",
+    "tx": "Роботизована (S tronic)",
+    "dors": 4,
+    "color": "Чорний",
+
+    "location": "США",
+    "benefits": [
+      "Оновлена передня оптика та решітка радіатора — свіжий вигляд покоління B9.5",
+      "Ефективний двигун із м’яким гібридом (MHEV) у деяких комплектаціях",
+      "Повний привід Quattro — контроль у будь-яких погодних умовах",
+      "Мультимедіа останнього покоління з вбудованим навігатором та голосовим керуванням",
+      "Комфортна керованість, ідеальна шумоізоляція салону",
+      "Великий багажник і зручний задній ряд — підходить для сім’ї та далеких поїздок",
+      "Низька витрата пального для такого класу — близько 7 л/100 км"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A4 2019 — це оновлена версія улюбленого седана середньої преміум-ліги. Авто отримало сучасні технології, збережено впізнаваний стиль Audi та додано ще більше зручності для водія. A4 залишається однією з найпопулярніших моделей завдяки своїй надійності, комфорту та динаміці.\nЗавдяки роботизованій коробці S tronic та системі Quattro — це авто дарує не лише безпеку, а й емоції за кермом. Якщо ви шукаєте універсальний варіант \"на кожен день\", який виглядає дорого, але не коштує як флагман — Audi A4 2019 стане відмінним вибором.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "В наявності",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 5,
-    "model": "BMW XM",
+    "title": "Audi A5 2017",
+    "model": "Audi A5 Coupé",
+    "year": 2017,
+    "bodyType": "Купе (2 двері)",
+    "engine": "2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro)",
+    "tx": "Роботизована (S tronic)",
+    "dors": 2,
+    "places": 4,
+    "color": "Білий або сірий металік",
+
+    "location": "США",
+    "benefits": [
+      "Спортивний дизайн із динамічними лініями кузова",
+      "Потужний та економічний двигун з відмінною тягою",
+      "Повний привід Quattro — впевнене керування в будь-яких умовах",
+      "Інтер'єр із якісною шкірою та сучасною цифровою панеллю",
+      "Чудова аеродинаміка, що знижує шум на швидкості",
+      "Ідеальний баланс комфорту і спортивного характеру"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A5 2017 — це стильне купе преміум-класу, створене для тих, хто цінує водійські емоції та елегантний зовнішній вигляд. Авто базується на платформі MLB та має покращену жорсткість кузова. У версії з повним приводом Quattro та роботизованою коробкою S tronic — керування стає точним, а динаміка — вражаючою.\nЦя модель ідеально підходить для індивідуального використання, поїздок у місті чи на трасі. Якщо ви шукаєте автомобіль, який поєднує комфорт, престиж і драйв — A5 2017 залишить яскраве враження.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "В наявності",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 6,
-    "model": "BMW XM",
+    "title": "Audi A5 2019",
+    "model": "Audi A5 Sportback",
+    "year": 2019,
+    "bodyType": "Ліфтбек (5 дверей)",
+    "engine": "2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro)",
+    "tx": "Роботизована (S tronic)",
+    "dors": 5,
+    "places": 5,
+    "color": "Чорний або темно-синій",
+
+    "location": "США",
+    "benefits": [
+      "Більш практичний кузов Sportback з великим багажником",
+      "Технології Audi Virtual Cockpit та MMI Navigation Plus",
+      "Потужний двигун із плавною роботою трансмісії",
+      "Преміальна акустика та атмосферне підсвічування салону",
+      "Повний привід Quattro забезпечує максимальну стійкість",
+      "Покращена шумоізоляція та комфорт заднього ряду"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A5 2019 у кузові Sportback — це гармонійне поєднання дизайну, технологій та щоденної практичності. Завдяки п’ятидверному формату, автомобіль зберігає елегантний вигляд купе, але при цьому має більше простору для пасажирів та речей.\nСучасна мультимедійна система, цифрова приладова панель, комфортна посадка і повний привід — усе це робить A5 2019 ідеальним варіантом для щоденного використання з відчуттям преміум-класу. Це авто — не просто транспорт, а частина стилю життя.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "Під замовлення",
-    "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    }
   },
   {
     "id": 7,
-    "model": "BMW XM",
+    "title": "Audi A6 2014",
+    "model": "Audi A6",
+    "year": 2014,
+    "bodyType": "Седан",
+    "engine": "2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro) або передній (залежно від комплектації)",
+    "tx": "Автоматична (Multitronic або S tronic)",
+    "dors": 4,
+    "places": 5,
+    "color": "Сріблястий, чорний, білий",
+
+    "location": "США",
+    "benefits": [
+      "Перевірена надійність — одна з найпопулярніших моделей Audi у світі",
+      "Просторий салон і великий багажник",
+      "Комфортна підвіска для міста і траси",
+      "Стриманий преміум-дизайн, який не старіє",
+      "Доступна ціна в порівнянні з молодшими поколіннями",
+      "Ремонтопридатність і широкий вибір запчастин"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi A6 2014 — це бізнес-седан із німецьким характером, який залишається актуальним навіть через роки. Автомобіль створений для поціновувачів класичного стилю, тиші в салоні та впевненого керування. 2-літровий бензиновий двигун з турбіною забезпечує приємну динаміку, а коробка Multitronic або S tronic працює плавно та надійно.\nЦя модель — відмінний вибір для тих, хто шукає авто з ім’ям, якістю і при цьому з розумним бюджетом на придбання та обслуговування.",
     "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
     "photos": {
       "desktop": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/desktop/preview/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/preview/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/desktop/1x/bmw-wm.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/desktop/2x/bmw-wm.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-front.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/desktop/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ],
       "mobile": [
         {
           "preview": {
-            "x1": [
-              "/img/cars/1/mobile/preview/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/preview/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/preview/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           },
           "original": {
-            "x1": [
-              "/img/cars/1/mobile/1x/bmw-wm.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/1x/bmw-wm-back.webp"
-            ],
-            "x2": [
-              "/img/cars/1/mobile/2x/bmw-wm.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-front.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-salon2.webp",
-              "/img/cars/1/mobile/2x/bmw-wm-back.webp"
-            ]
+            "x1": [],
+            "x2": []
           }
         }
       ]
-    },
-    "year": 2025,
-    "bodyType": "Позашляховик",
-    "color": "Чорний",
-    "manufacturer": "BMW",
-    "wheel": "Лівий",
-    "mileage": 40000,
-    "drive": "4WD",
-    "vehicleType": "Бензиновий",
-    "engine": 4.5,
-    "power": 475,
-    "tx": "Автомат",
-    "auction": "KCAA Fukuoka",
-    "rating": 4,
-    "auctionDate": "08.07.2025",
-    "location": "USA",
-    "status": "Під замовлення",
+    }
+  },
+  {
+    "id": 8,
+    "title": "Audi A6 2018",
+    "model": "Audi A6 (C7 рестайл)",
+    "year": 2018,
+    "bodyType": "Седан",
+    "engine": "Двигун: 2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro)",
+    "tx": "КПП: S tronic (роботизована)",
+    "dors": 4,
+    "places": 5,
+    "color": "Темно-сірий, білий, чорний",
+
+    "location": "США",
+    "benefits": [
+      "Рестайлінгова версія з оновленою оптикою та інтер’єром",
+      "Повний привід Quattro для максимальної стійкості на дорозі",
+      "Надійний та економічний двигун з турбіною",
+      "Сучасні системи безпеки та асистенти водія",
+      "Якісний мультимедійний екран з навігацією",
+      "Висока залишкова вартість на вторинному ринку"
+    ],
+    "status": "В наявності",
     "price": 630000,
-    "details": "Внешний вид нового BMW XM 2025 действительно не дотягивает до полноразмерного кроссовера. Небольшой кузов, невысокая посадка и компактные формы. По внешнему виду дизайнеры попытались создать новый автомобиль, но при этом сохранив современные и узнаваемые черты компании Mazda.\nПереднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая решетка радиатора, с зауженной часть внизу. В зависимости от комплектации решетка с горизонтальными планками может быть черной или хромированной, но в любом варианте с хромированной окантовкой. Центр решетки радиатора занимает необычная эмблема компании, в нее инженеры вмонтировали переднюю камеру и несколько датчиков.\nПередняя оптика в зависимости от комплектации Mazda CX-3 2017 может быть на основе галогенок. В максимальной комплектации кроссовера установлена светодиодная адаптивная оптика. В любой с комплектаций оптика сделана таким образом, что внутри повторяет часть хромированной окантовки решетки радиатора, тем самым создавая впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть бампера украшает дополнительная решетка радиатора. Боковую часть бампера в зависимости от комплектации будут установлены противотуманки или комплект светодиодных противотуманок со светодиодными дневными ходовыми огнями."
+    "details": "Audi A6 2018 — це завершення епохи покоління C7, яке встигло зарекомендувати себе як одне з найвдаліших. У рестайлінговій версії автомобіль отримав свіжий вигляд, покращену ергономіку і ще більше технологій. Його комфорт, тиша в салоні та впевненість на дорозі роблять A6 ідеальним вибором як для бізнесу, так і для щоденних поїздок.\nЦя модель — компроміс між класикою та технологічністю. Вона виглядає сучасно, їде динамічно і не вимагає компромісів у повсякденному використанні.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "title": "Audi Q5 2018",
+    "model": "Audi Q5",
+    "year": 2018,
+    "bodyType": "SUV (кросовер)",
+    "engine": "2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro)",
+    "tx": "S tronic (роботизована)",
+    "dors": 4,
+    "places": 5,
+    "color": "Сірий, чорний, білий",
+    "location": "США",
+    "benefits": [
+      "Ідеальне співвідношення розміру, комфорту та динаміки",
+      "Потужний двигун і повний привід для будь-яких умов",
+      "Високий кліренс і плавна підвіска",
+      "Збалансоване керування — як у седана, але з практичністю кросовера",
+      "Сучасна мультимедіа, клімат-контроль, безключовий доступ"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi Q5 2018 — це універсальний преміальний кросовер, який поєднує в собі комфорт, динаміку та престиж. Платформа MLB дозволила покращити керованість і зменшити вагу, а легендарна система Quattro гарантує впевненість на будь-якій дорозі. Авто прекрасно підходить як для міських умов, так і для подорожей.\nЦя модель залишається однією з найпопулярніших серед тих, хто цінує надійність, статус та технологічність.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Audi Q5 2022",
+    "model": "Audi Q5",
+    "year": 2022,
+    "bodyType": "SUV (кросовер)",
+    "engine": "2.0 л TFSI, бензин",
+    "drive": "Повний (Quattro)",
+    "tx": "S tronic",
+    "dors": 4,
+    "places": 5,
+    "color": "Білий, чорний, темно-синій",
+    "location": "США або Корея",
+    "benefits": [
+      "Сучасний рестайлінг з оновленим дизайном фар та решітки",
+      "Високотехнологічний салон із цифровою панеллю приладів",
+      "Розширений список опцій: адаптивний круїз, парктронік, електроприводи",
+      "Потужний, але економічний двигун",
+      "Преміальна якість збірки та матеріалів"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi Q5 2022 — це оновлений варіант одного з найпопулярніших кросоверів бізнес-класу. Виглядає сучасно, їде впевнено, і при цьому залишається комфортним для щоденного використання. Ця версія особливо цінується за комбінацію технологій, дизайну і німецької надійності.\nАвто підійде тим, хто шукає престижне і технологічне авто з акцентом на комфорт і безпеку.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "title": "Audi Q7 2015",
+    "model": "Audi Q7",
+    "year": 2015,
+    "bodyType": "SUV (7 місць)",
+    "engine": "3.0 л TFSI або 3.0 TDI",
+    "drive": "Повний (Quattro)",
+    "tx": "Автомат Tiptronic",
+    "dors": 4,
+    "places": 7,
+    "color": "Чорний, сріблястий, білий",
+    "location": "США",
+    "benefits": [
+      "Повноцінний 7-місний кросовер з високим рівнем комфорту",
+      "Величезний багажник і просторий салон для великої родини",
+      "Потужний двигун і м’яка підвіска для далеких подорожей",
+      "Високий рівень безпеки: 6+ подушок, стабілізація, камера заднього виду",
+      "Надійна коробка Tiptronic і легендарна система повного приводу Quattro"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi Q7 2015 — це покоління, яке вивело модель на новий рівень по керованості, економічності та внутрішньому простору. Хоча цей кузов зберігає масивний зовнішній вигляд, авто стало легшим і динамічнішим у русі. Завдяки платформі MLB і постійному повному приводу Quattro, машина чудово тримається на дорозі та справляється з будь-якими погодними умовами.\nСалон вражає ергономікою та комфортом — зручні сидіння, багатозонний клімат, якісна акустика і простір на третьому ряду роблять Q7 ідеальним авто для родинних поїздок. Ця модель — вибір тих, хто шукає статус, практичність і німецьку інженерію в одному флаконі.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "title": "Audi Q7 2022",
+    "model": "Audi Q7",
+    "year": 202,
+    "bodyType": "SUV (7 місць)",
+    "engine": "2.0 або 3.0 л TFSI (мild-hybrid)",
+    "drive": "Повний (Quattro)",
+    "tx": "Tiptronic, 8-ступенева",
+    "dors": 4,
+    "places": 7,
+    "color": "Білий, темно-сірий, чорний",
+    "location": "США або Корея",
+    "benefits": [
+      "Оновлений дизайн з LED-оптикою і візуальним акцентом на ширину",
+      "Високотехнологічний інтер'єр з трьома дисплеями і сенсорною панеллю",
+      "Вбудований мild-hybrid для кращої економії пального",
+      "Третій ряд сидінь з електроприводом складання",
+      "Престиж, комфорт і динаміка в одному автомобілі"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi Q7 2022 — це поєднання сучасних технологій, преміальної якості та сімейного комфорту. Після оновлення модель отримала ще більш стильний вигляд та інноваційний салон з трьома сенсорними дисплеями, включаючи віртуальну панель приладів, мультимедіа і блок клімат-контролю.\nАвто ідеально підходить для великих сімей або тих, хто часто подорожує. З семимісним салоном, гнучким багажним простором і широкими можливостями налаштування сидінь — цей кросовер вміє адаптуватися до будь-яких сценаріїв використання. Потужний мотор, Quattro, адаптивна підвіска і безліч систем допомоги водію роблять керування приємним і безпечним. Це справжній флагман для тих, хто не готовий до компромісів.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "title": "Audi SQ5 2020",
+    "model": "Audi SQ5",
+    "year": 2020,
+    "bodyType": "SUV / Кросовер",
+    "engine": "3.0 TFSI V6, 349 к.с.",
+    "drive": "Повний (Quattro)",
+    "tx": "8-ступенева автоматична Tiptronic",
+    "dors": 4,
+    "places": 5,
+    "color": "Темно-сірий, чорний, білий",
+    "location": "США",
+    "benefits": [
+      "Високопродуктивний 3.0 TFSI двигун на 349 к.с. — спортивна динаміка",
+      "Преміальна комплектація: спортивні сидіння, шкіра, цифрова панель Virtual Cockpit",
+      "Адаптивна підвіска та спортивне кермо — ідеальний баланс між комфортом і драйвом",
+      "Надійна система повного приводу Quattro для впевненості в будь-яких умовах",
+      "Швидкий розгін до 100 км/год — близько 5 секунд"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi SQ5 2020 — це не просто кросовер, а справжній спорткар в обгортці сімейного SUV. Потужний 3.0 TFSI двигун з наддувом V6 забезпечує блискавичний відгук на педаль газу, а фірмова система повного приводу Quattro дарує максимальну стабільність навіть у складних погодних умовах.\nСалон — втілення стилю та технологій: цифрова панель приладів, преміальні матеріали, аудіосистема Bang & Olufsen (в окремих комплектаціях). Ця модель створена для тих, хто не готовий обирати між драйвом і комфортом. Універсальний, динамічний, престижний — SQ5 2020 дарує задоволення щодня.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "title": "Audi SQ5 2022",
+    "model": "Audi SQ5",
+    "year": 2022,
+    "bodyType": "SUV / Кросовер",
+    "engine": "3.0 TFSI V6, 349 к.с.",
+    "drive": "Повний (Quattro)",
+    "tx": "Tiptronic, 8-ступенева",
+    "dors": 4,
+    "places": 5,
+    "color": "Білий, синій, чорний",
+    "location": "США",
+    "benefits": [
+      "Оновлений дизайн з новою решіткою, LED-оптикою та спортивним обвісом",
+      "Покращена мультимедіа: MMI з більшим екраном, оновлений інтерфейс",
+      "Все ще 3.0 V6, але з оптимізованим розходом і екологічністю",
+      "Спортивна адаптивна підвіска та керамічні гальма в преміум-комплектаціях",
+      "Безпека: асистенти руху в смузі, круговий огляд, парктроніки"
+    ],
+    "status": "В наявності",
+    "price": 630000,
+    "details": "Audi SQ5 2022 — це еволюція швидкості та технологій у преміальному кросовері. Завдяки редизайну авто стало ще агресивнішим зовні, з більш широким кузовом, фірмовими S-елементами та новою LED-оптикою. Під капотом — знайомий 3.0-літровий V6, що дарує драйв і потужність, але в поєднанні з більш сучасною екологічною оптимізацією.\nВ салоні — технології нового покоління: мультимедіа MMI з розширеним екраном, системи допомоги водію, які полегшують керування в місті та на трасі. SQ5 — це вибір для тих, хто хоче статус, швидкість і стиль в одному автомобілі без компромісів. Ідеально підходить як для ділових поїздок, так і для активного сімейного життя.",
+    "img": "/img/main/popular/desktop/1x/bmw-xm.webp",
+    "photos": {
+      "desktop": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ],
+      "mobile": [
+        {
+          "preview": {
+            "x1": [],
+            "x2": []
+          },
+          "original": {
+            "x1": [],
+            "x2": []
+          }
+        }
+      ]
+    }
   }
 ]
