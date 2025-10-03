@@ -374,7 +374,6 @@
     "engine": "2.0 л TFSI, бензин",
     "drive": "Повний (Quattro) або передній (залежно від комплектації)",
     "tx": "Автоматична (Multitronic або S tronic)",
-    "dors": 4,
     "places": 5,
     "color": "Сріблястий, чорний, білий",
 
@@ -427,7 +426,7 @@
     "engine": "Двигун: 2.0 л TFSI, бензин",
     "drive": "Повний (Quattro)",
     "tx": "КПП: S tronic (роботизована)",
-    "dors": 4,
+
     "places": 5,
     "color": "Темно-сірий, білий, чорний",
 
@@ -480,7 +479,7 @@
     "engine": "2.0 л TFSI, бензин",
     "drive": "Повний (Quattro)",
     "tx": "S tronic (роботизована)",
-    "dors": 4,
+
     "places": 5,
     "color": "Сірий, чорний, білий",
     "location": "США",
@@ -531,7 +530,7 @@
     "engine": "2.0 л TFSI, бензин",
     "drive": "Повний (Quattro)",
     "tx": "S tronic",
-    "dors": 4,
+
     "places": 5,
     "color": "Білий, чорний, темно-синій",
     "location": "США або Корея",
@@ -582,7 +581,7 @@
     "engine": "3.0 л TFSI або 3.0 TDI",
     "drive": "Повний (Quattro)",
     "tx": "Автомат Tiptronic",
-    "dors": 4,
+
     "places": 7,
     "color": "Чорний, сріблястий, білий",
     "location": "США",
@@ -633,7 +632,7 @@
     "engine": "2.0 або 3.0 л TFSI (мild-hybrid)",
     "drive": "Повний (Quattro)",
     "tx": "Tiptronic, 8-ступенева",
-    "dors": 4,
+
     "places": 7,
     "color": "Білий, темно-сірий, чорний",
     "location": "США або Корея",
@@ -684,7 +683,7 @@
     "engine": "3.0 TFSI V6, 349 к.с.",
     "drive": "Повний (Quattro)",
     "tx": "8-ступенева автоматична Tiptronic",
-    "dors": 4,
+
     "places": 5,
     "color": "Темно-сірий, чорний, білий",
     "location": "США",
@@ -735,7 +734,6 @@
     "engine": "3.0 TFSI V6, 349 к.с.",
     "drive": "Повний (Quattro)",
     "tx": "Tiptronic, 8-ступенева",
-    "dors": 4,
     "places": 5,
     "color": "Білий, синій, чорний",
     "location": "США",
