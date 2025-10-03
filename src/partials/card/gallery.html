@@ -43,32 +43,20 @@
         </li>
       </ul>
     </div>
-    <nav class="tabs">
-      <ul class="tabs-list">
-        <li class="tab-item">
-          <input type="radio" id="tab1" class="tab-item-link" />
-          <label for="tab1" class="tab-labels" title="Характеристики"
-            >Характеристики</label
-          >
-        </li>
-        <li class="tab-item">
-          <input type="radio" id="tab2" class="tab-item-link" />
-          <label for="tab2" class="tab-labels" title="Інформація"
-            >Інформація</label
-          >
-        </li>
-        <li class="tab-item">
-          <input type="radio" id="tab3" class="tab-item-link" />
-          <label for="tab3" class="tab-labels" title="Відеоогляд"
-            >Відеоогляд</label
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="buying-wrapper">
-      <div class="info">
+    <div class="tabs">
+      <input
+        type="radio"
+        id="tab1"
+        class="tab-item-link"
+        name="tabs-name"
+        checked
+      />
+      <label for="tab1" class="tab-labels" title="Характеристики"
+        >Характеристики</label
+      >
+      <div class="tab-content" id="tab1-characteristics">
         <div class="tab1-characteristics">
-          <div class="row1">
+          <div class="col1">
             <p class="characteristic">
               Виробник: <span class="characteristic-value">Mazda</span>
             </p>
@@ -76,7 +64,8 @@
               Рік: <span class="characteristic-value">2017</span>
             </p>
             <p class="characteristic">
-              Тип кузова: <span class="characteristic-value">Позашляховик</span>
+              Тип кузова:
+              <span class="characteristic-value">Позашляховик</span>
             </p>
             <p class="characteristic">
               Колір: <span class="characteristic-value">Білий</span>
@@ -88,10 +77,11 @@
               Тип приводу: <span class="characteristic-value">4wd</span>
             </p>
             <p class="characteristic">
-              Двигун: <span class="characteristic-value">Бензин (1.5 л.)</span>
+              Двигун:
+              <span class="characteristic-value">Бензин (1.5 л.)</span>
             </p>
           </div>
-          <div class="row2">
+          <div class="col2">
             <p class="characteristic">
               Потужність: <span class="characteristic-value">235 к.с.</span>
             </p>
@@ -112,61 +102,63 @@
             </p>
           </div>
         </div>
+      </div>
+      <input type="radio" id="tab2" class="tab-item-link" name="tabs-name" />
+      <label for="tab2" class="tab-labels" title="Інформація">Інформація</label>
+      <div class="tab-content" id="tab2-additional-info">
+        <p class="additional-info-paragraph">
+          Внешний вид нового Mazda CX-3 2017 действительно не дотягивает до
+          полноразмерного кроссовера. Небольшой кузов, невысокая посадка и
+          компактные формы. По внешнему виду дизайнеры попытались создать новый
+          автомобиль, но при этом сохранив современные и узнаваемые черты
+          компании Mazda.
+        </p>
 
-        <div class="tab2-additional-info">
-          <p class="additional-info-paragraph">
-            Внешний вид нового Mazda CX-3 2017 действительно не дотягивает до
-            полноразмерного кроссовера. Небольшой кузов, невысокая посадка и
-            компактные формы. По внешнему виду дизайнеры попытались создать
-            новый автомобиль, но при этом сохранив современные и узнаваемые
-            черты компании Mazda.
-          </p>
+        <p class="additional-info-paragraph">
+          Переднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая
+          решетка радиатора, с зауженной часть внизу. В зависимости от
+          комплектации решетка с горизонтальными планками может быть черной или
+          хромированной, но в любом варианте с хромированной окантовкой. Центр
+          решетки радиатора занимает необычная эмблема компании, в нее инженеры
+          вмонтировали переднюю камеру и несколько датчиков.
+        </p>
 
-          <p class="additional-info-paragraph">
-            Переднюю часть кроссовера Mazda CX-3 2017 занимает хорошо узнаваемая
-            решетка радиатора, с зауженной часть внизу. В зависимости от
-            комплектации решетка с горизонтальными планками может быть черной
-            или хромированной, но в любом варианте с хромированной окантовкой.
-            Центр решетки радиатора занимает необычная эмблема компании, в нее
-            инженеры вмонтировали переднюю камеру и несколько датчиков.
-          </p>
-
-          <p class="additional-info-paragraph">
-            Передняя оптика в зависимости от комплектации Mazda CX-3 2017 может
-            быть на основе галогенок. В максимальной комплектации кроссовера
-            установлена светодиодная адаптивная оптика. В любой с комплектаций
-            оптика сделана таким образом, что внутри повторяет часть
-            хромированной окантовки решетки радиатора, тем самым создавая
-            впечатление, что в оптику вмонтировали часть решетки. Нижнюю часть
-            бампера украшает дополнительная решетка радиатора. Боковую часть
-            бампера в зависимости от комплектации будут установлены
-            противотуманки или комплект светодиодных противотуманок со
-            светодиодными дневными ходовыми огнями.
-          </p>
-        </div>
-
-        <div class="tab3-reviews">
-          <div class="review">
-            <div class="review-image-container">
-              <img
-                class="review-image"
-                src="/img/main/reviews/desktop/x1/Rectangle 8.png"
-                alt=""
-              />
-            </div>
-            <div class="review-desc">
-              <h3 class="review-title">
-                Космический Shuttle | HONDA FIT SHUTTLE 2013
-              </h3>
-              <ul class="review-info-list">
-                <li class="review-info">391 просмотр</li>
-                <li class="review-info">3 недели назад</li>
-              </ul>
-            </div>
+        <p class="additional-info-paragraph">
+          Передняя оптика в зависимости от комплектации Mazda CX-3 2017 может
+          быть на основе галогенок. В максимальной комплектации кроссовера
+          установлена светодиодная адаптивная оптика. В любой с комплектаций
+          оптика сделана таким образом, что внутри повторяет часть хромированной
+          окантовки решетки радиатора, тем самым создавая впечатление, что в
+          оптику вмонтировали часть решетки. Нижнюю часть бампера украшает
+          дополнительная решетка радиатора. Боковую часть бампера в зависимости
+          от комплектации будут установлены противотуманки или комплект
+          светодиодных противотуманок со светодиодными дневными ходовыми огнями.
+        </p>
+      </div>
+      <input type="radio" id="tab3" class="tab-item-link" name="tabs-name" />
+      <label for="tab3" class="tab-labels" title="Відеоогляд">Відеоогляд</label>
+      <div class="tab-content" id="tab3-reviews">
+        <div class="review">
+          <div class="review-image-container">
+            <img
+              class="review-image"
+              src="/img/main/reviews/desktop/x1/Rectangle 8.png"
+              alt=""
+            />
+          </div>
+          <div class="review-desc">
+            <h3 class="review-title">
+              Космический Shuttle | HONDA FIT SHUTTLE 2013
+            </h3>
+            <ul class="review-info-list">
+              <li class="review-info">391 просмотр</li>
+              <li class="review-info">3 недели назад</li>
+            </ul>
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="buying-wrapper">
       <div class="buying-block">
         <p class="buying-block-title">Ціна в Україні</p>
         <h2 class="buying-block-price">800 000 грн.</h2>
