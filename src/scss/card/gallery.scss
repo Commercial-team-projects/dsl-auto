@@ -55,7 +55,8 @@
   flex-wrap: wrap;
 //   margin: 2rem auto;
   max-width: 70ch;
-  min-height: 400px;
+  margin-bottom: 28px;
+
 }
 
 .tabs label {
@@ -87,7 +88,7 @@ padding: 10px;
 .tabs input[type="radio"]:checked + label {
   
   border-bottom: 1px solid $color-red;
-  color: tomato;
+  color: $color-red;
 }
 
 .tabs input[type="radio"]:checked + label + .tab-content {
@@ -141,7 +142,8 @@ padding: 10px;
 
 
 .additional-info-paragraph{
-    margin-top: 32px;
+    // margin-top: 32px;
+    margin-bottom: 24px;
 }
 
 .buying-block{
