@@ -198,39 +198,33 @@
 </section>
 
           <section class="filter">
-  <div class="filter-container">
+  <form class="filter-container">
     <div class="filter-checkbox-box">
       <!-- //! Checkboxes -->
-      <input
-        class="filter-checkbox-input visually-hidden"
-        type="checkbox"
-        name="filter-checkbox"
-        id="clearance"
-        value="clearance"
-      />
-      <label class="filter-checkbox-label" for="clearance">
-        <span class="filter-checkbox">
-          <svg class="filter-checkbox-icon" width="18" height="18">
-            <use href="../img/main/sprite.svg#icon-check"></use>
-          </svg>
-        </span>
-        <div class="filter-desc">Повне розмитнення</div>
-      </label>
-      <input
-        class="filter-checkbox-input visually-hidden"
-        type="checkbox"
-        name="filter-checkbox"
-        id="disassembly"
-        value="disassembly"
-      />
-      <label class="filter-checkbox-label" for="disassembly">
-        <span class="filter-checkbox">
-          <svg class="filter-checkbox-icon" width="18" height="18">
-            <use href="../img/main/sprite.svg#icon-check"></use>
-          </svg>
-        </span>
-        <div class="filter-desc">Розбір або конструктор</div>
-      </label>
+      <div class="filter-checkbox-container">
+        <input class="filter-checkbox-input visually-hidden" type="checkbox" name="filter-checkbox" id="clearance"
+          value="clearance" />
+        <label class="filter-checkbox-label" for="clearance">
+          <span class="filter-checkbox">
+            <svg class="filter-checkbox-icon" width="18" height="18">
+              <use href="../img/main/sprite.svg#icon-check"></use>
+            </svg>
+          </span>
+          <div class="filter-desc">Повне розмитнення</div>
+        </label>
+      </div>
+      <div class="filter-checkbox-container">
+        <input class="filter-checkbox-input visually-hidden" type="checkbox" name="filter-checkbox" id="disassembly"
+          value="disassembly" />
+        <label class="filter-checkbox-label" for="disassembly">
+          <span class="filter-checkbox">
+            <svg class="filter-checkbox-icon" width="18" height="18">
+              <use href="../img/main/sprite.svg#icon-check"></use>
+            </svg>
+          </span>
+          <div class="filter-desc">Розбір або конструктор</div>
+        </label>
+      </div>
     </div>
     <div class="filter-container-options-box">
       <!-- //! Options --><!-- //! Select -->
@@ -466,14 +460,13 @@
       <button type="button" class="filter-ext-search-btn">
         Розширений пошук
       </button>
-      <button type="button" class="filter-search-btn">Пошук</button>
+      <button type="submit" class="filter-search-btn">Пошук</button>
       <p class="filter-bottom-text">
         Авто у наявності: <span class="filter-bottom-text-special">256</span>
       </p>
     </div>
-  </div>
+  </form>
 </section>
-
           <section class="popular">
   <div class="container">
     <div class="popular-status">
