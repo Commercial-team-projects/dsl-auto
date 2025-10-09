@@ -1,0 +1,2 @@
+import"./assets/main-CM7pNAme.js";/* empty css                      */(()=>{const o={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e);function e(){o.modal.classList.toggle("is-open")}})();
+//# sourceMappingURL=index.js.map
