@@ -1,0 +1,1 @@
+{"dev": "concurrently \" vite\" & \"nodemon .\\src\\backend\\server.js\""}
