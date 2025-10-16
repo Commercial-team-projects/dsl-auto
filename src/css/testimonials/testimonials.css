@@ -66,9 +66,9 @@ iframe {
     opacity: 0;
     transform: translateY(60px) scale(0.95);
     transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-} 
+}
 
- .testimonials-list-item.visible {
+.testimonials-list-item.visible {
     display: flex;
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -115,7 +115,7 @@ iframe {
     }
 
     .testimonials-list-item {
-        flex-basis: calc((100% - 90px) / 5 );
+        flex-basis: calc((100% - 90px) / 5);
         transform: none;
         display: flex;
         opacity: 1;
