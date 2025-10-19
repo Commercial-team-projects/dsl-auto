@@ -1,23 +1,32 @@
-.feedback-btn {
-    position: fixed;
-    bottom: 64px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
-    width: 50px;
-    height: 40px;
-    display: block;
+.feedback-div {
+  position: fixed;
+  bottom: 64px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 50px;
+  height: 40px;
+}
 
+.feedback-btn {
+  position: fixed;
+  bottom: 64px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 50px;
+  height: 40px;
+  /* display: block; */
 }
 
 .feedback-icon {
-    fill: var(--color-green);
-    display: inline-block;
+  fill: var(--color-green);
+  /* display: inline-block; */
 }
 
 @media only screen and (min-width: 1280px) {
-    .feedback-btn {
-        bottom: 90px;
-        right: 120px;
-    }
+  .feedback-btn {
+    bottom: 90px;
+    right: 120px;
+  }
 }

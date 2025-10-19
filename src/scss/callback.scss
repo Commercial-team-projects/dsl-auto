@@ -1,5 +1,6 @@
 @import './base.scss';
 @import '../scss/mixins/media_mixin.scss';
+@import '../css/callback.css';
 
 .callback {
   padding: 0 20px;
@@ -22,6 +23,11 @@
     padding: 24px;
     background-color: $color-white;
 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     & > p {
       font-weight: 700;
       font-size: 24px;
@@ -29,7 +35,7 @@
 
     @include _1280 {
       width: 387px;
-      margin: auto auto auto 43px;
+      // margin: auto auto auto 43px;
     }
   }
 
