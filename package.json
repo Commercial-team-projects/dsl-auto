@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    
     "dev": "concurrently \"vite\" \"nodemon .\\src\\backend\\server.js\"",
     "build": "vite build --base=/vanilla-app-template/",
     "preview": "vite preview"
@@ -20,6 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.11.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
