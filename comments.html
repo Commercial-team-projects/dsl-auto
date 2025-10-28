@@ -18,9 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="module" crossorigin src="/dsl-auto/assets/main--tAs-gbN.js"></script>
-    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/main-CeNCCFcm.css">
-    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/styles-BeBeMnMt.css">
+    <script type="module" crossorigin src="/dsl-auto/assets/main-Bt4U3o4G.js"></script>
+    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/main-BvwJC37L.css">
+    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/styles-DfXeJYEd.css">
   </head>
   <body>
     <div class="layout">
@@ -743,40 +743,47 @@
   </div>
 </section>
 
-          <section class="callback" id="callback">
-  <div class="callback-container">
-    <p>Зворотній зв'язок</p>
-    <form class="callback-form" action="#" method="post">
-      <div class="callback-content">
-        <div class="callback-content-input">
-          <label class="callback-label" for="name"> Введіть ваше ім'я </label>
-          <input
-            class="callback-input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ввести і'мя"
-            required
-          />
-        </div>
-        <div class="callback-content-input">
-          <label class="callback-label" for="phone">
-            Введіть ваш телефон
-          </label>
-          <input
-            class="callback-input"
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="+380"
-            required
-          />
-        </div>
-      </div>
-      <button class="callback-button" type="submit">
-        Замовити безкоштовну консультацію
+          <section class="callback">
+  <div class="callback-overlay" id="callback" data-modal="callback">
+    <div class="callback-container">
+      <p>Зворотній зв'язок</p>
+      <button class="callback-close-btn" type="button" data-modal-close>
+        <svg class="icon-close" width="8" height="8">
+          <use href="/dsl-auto/assets/sprite-AjCF2lmi.svg#icon-close"></use>
+        </svg>
       </button>
-    </form>
+      <form class="callback-form" action="#" method="post">
+        <div class="callback-content">
+          <div class="callback-content-input">
+            <label class="callback-label" for="name"> Введіть ваше ім'я </label>
+            <input
+              class="callback-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ввести ім'я"
+              required
+            />
+          </div>
+          <div class="callback-content-input">
+            <label class="callback-label" for="phone">
+              Введіть ваш телефон
+            </label>
+            <input
+              class="callback-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+380"
+              required
+            />
+          </div>
+        </div>
+        <button class="callback-button" type="submit">
+          Замовити безкоштовну консультацію
+        </button>
+      </form>
+    </div>
   </div>
 </section>
 
