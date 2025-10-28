@@ -43,10 +43,6 @@ const PORT = 4000;
 
 app.use(express.json());
 
-app.use('/', graphqlHTTP({
-    schema: schema,
-    graphiql: true
-  }));
 
 // 4. Mount the GraphQL handler
 app.all('/graphql', createHandler({
@@ -123,13 +119,6 @@ app.delete('/api/items/:id', (req, res) => {
 });
 
 
-
-
-
-
-
-
-
 //returns a list of categories
 app.get('/cars/category-list', (req, res) => {
     res.json(items);
@@ -150,47 +139,6 @@ app.get('/cars/category', (req, res) => {
 app.get('/cars/{id}', (req, res) => {
     res.json(items);
 });
-
-
-
-
-// app.post('/items', (req, res) => {
-//     const newItem = {
-//         id: nextId++,
-//         name: req.body.name,
-//         description: req.body.description
-//     };
-//     items.push(newItem);
-//     res.status(201).json(newItem);
-// });
-
-// app.put('/items/:id', (req, res) => {
-//     const itemId = parseInt(req.params.id);
-//     const itemIndex = items.findIndex(i => i.id === itemId);
-
-//     if (itemIndex !== -1) {
-//         items[itemIndex] = {
-//             ...items[itemIndex],
-//             name: req.body.name || items[itemIndex].name,
-//             description: req.body.description || items[itemIndex].description
-//         };
-//         res.json(items[itemIndex]);
-//     } else {
-//         res.status(404).send('Item not found');
-//     }
-// });
-
-// app.delete('/items/:id', (req, res) => {
-//     const itemId = parseInt(req.params.id);
-//     const initialLength = items.length;
-//     items = items.filter(i => i.id !== itemId);
-
-//     if (items.length < initialLength) {
-//         res.status(204).send();
-//     } else {
-//         res.status(404).send('Item not found');
-//     }
-// });
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

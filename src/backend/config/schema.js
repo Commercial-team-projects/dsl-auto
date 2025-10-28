@@ -2,8 +2,8 @@ const _ = require('lodash');
 
 // Authors и Posts получают данные в виде
 // JSON массивов с соответствующих файлов
-const Authors = require('./data/authors');
-const Posts = require('./data/posts');
+const Authors = require('./data/cars');
+const Posts = require('./data/categories');
 
 let {
     // Здесь базовые типы GraphQL, которые нужны в этом уроке
@@ -66,12 +66,7 @@ const BlogQueryRootType = new GraphQLObjectType({
 
 const BlogAppSchema = new GraphQLSchema({
     query: BlogQueryRootType
-    /* Если вам понадобиться создать или 
-       обновить данные, вы должны использовать
-       мутации. 
-       Мутации не будут изучены в этом посте.
-       mutation: BlogMutationRootType
-    */
+
 });
 
 module.exports = BlogAppSchema;

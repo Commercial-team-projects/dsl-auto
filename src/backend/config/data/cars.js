@@ -1,4 +1,4 @@
-const Authors = [
+const Cars = [
     {
       id: '8dlx7ak38fd39dv79ad', 
       name: 'Orinami Olatunji',
@@ -16,4 +16,4 @@ const Authors = [
     }
   ];
   
-  module.exports = Authors;
+  module.exports = Cars;
