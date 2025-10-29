@@ -6,10 +6,11 @@ import express from 'express';
 // import graphqlHTTP from 'express-graphql';
 // import schema from './config/schema.js';
 
-import items from './db.json' with { type: 'json' };
+// import items from './db.json' with { type: 'json' };
 
 
-import createUsers from './routes/users.js';
+import userRoutes from './routes/userRoutes.js';
+import carRoutes from './routes/carRoutes.js';
 
 // 1. Define your GraphQL Schema
 // const schema = buildSchema(`
@@ -52,7 +53,10 @@ app.use(express.json());
 //     graphiql: true, // Enable the GraphiQL in-browser IDE for testing
 // }));
 
-app.use('/api/', createUsers);
+app.use('/api/users', userRoutes);
+app.use('/api/user/:id', userRoutes);
+app.use('/api/cars', carRoutes);
+app.use('/api/car/:id', carRoutes);
 
 // Good API structure
 // app.get('/api/products', getProducts);
@@ -66,7 +70,7 @@ app.use('/api/', createUsers);
 
 
 // GET all items
-app.get('/api/items', (req, res) => {
+app.use('/api/items', (req, res) => {
     res.json(items);
 });
 
