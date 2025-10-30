@@ -1,13 +1,9 @@
 // models/userModel.js
 
-// import mongoose, { Schema } from 'mongoose';
-// const userSchema = new Schema({
-//   // ... your schema definition
-// });
-
-// export const userModel = mongoose.model('User', userSchema);
-
-const users = [{ id: 1, user: "Mark" }, { id: 2, user: "Anna" }, { id: 3, user: "Andrei" }]; // In a real application, this would interact with a database
+// In a real application, this would interact with a database
+const users = [{ id: 1, name: "Mark", age: 1 }, 
+  { id: 2, name: "Anna", age: 35 }, 
+  { id: 3, name: "Andrei", age: 38 }]; 
 
 const getAllUsers = () => {
   return users;
@@ -16,5 +12,11 @@ const getAllUsers = () => {
 const getUserById = (id) => {
   return users.find(user => user.id === parseInt(id));
 };
+const getUserByName = (name) => {
+  return users.find(user => user.name === name);
+};
+const getUserByAge = (age) => {
+  return users.find(user => user.age === parseInt(age));
+};
 
-export default { getAllUsers, getUserById };
+export default { getAllUsers, getUserById, getUserByName, getUserByAge };

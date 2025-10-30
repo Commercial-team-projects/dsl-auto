@@ -45,6 +45,12 @@ const PORT = 4000;
 
 app.use(express.json());
 
+app.all('/secret', (req, res, next) => {
+  console.log('Accessing the secret section ...')
+  next() // pass control to the next handler
+}, (req, res) => {
+  res.send('Hello from B!')
+})
 
 // 4. Mount the GraphQL handler
 // app.all('/graphql', createHandler({
@@ -53,10 +59,10 @@ app.use(express.json());
 //     graphiql: true, // Enable the GraphiQL in-browser IDE for testing
 // }));
 
-app.use('/api/users', userRoutes);
-app.use('/api/user/:id', userRoutes);
-app.use('/api/cars', carRoutes);
-app.use('/api/car/:id', carRoutes);
+
+app.use('/api', userRoutes)
+app.use('/car', carRoutes);
+
 
 // Good API structure
 // app.get('/api/products', getProducts);
