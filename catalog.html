@@ -18,8 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="module" crossorigin src="/dsl-auto/assets/main-Bt4U3o4G.js"></script>
-    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/main-BvwJC37L.css">
+    <script type="module" crossorigin src="/dsl-auto/assets/leave-request-btn-BXxtoqOE.js"></script>
+    <script type="module" crossorigin src="/dsl-auto/assets/main-CnGxRr4x.js"></script>
+    <link rel="stylesheet" crossorigin href="/dsl-auto/assets/leave-request-btn-BvwJC37L.css">
     <link rel="stylesheet" crossorigin href="/dsl-auto/assets/catalog-DfXar1Ls.css">
   </head>
   <body>
@@ -207,8 +208,13 @@
     <div class="filter-checkbox-box">
       <!-- //! Checkboxes -->
       <div class="filter-checkbox-container">
-        <input class="filter-checkbox-input visually-hidden" type="checkbox" name="filter-checkbox" id="clearance"
-          value="clearance" />
+        <input
+          class="filter-checkbox-input visually-hidden"
+          type="checkbox"
+          name="filter-checkbox"
+          id="clearance"
+          value="clearance"
+        />
         <label class="filter-checkbox-label" for="clearance">
           <span class="filter-checkbox">
             <svg class="filter-checkbox-icon" width="18" height="18">
@@ -219,8 +225,13 @@
         </label>
       </div>
       <div class="filter-checkbox-container">
-        <input class="filter-checkbox-input visually-hidden" type="checkbox" name="filter-checkbox" id="disassembly"
-          value="disassembly" />
+        <input
+          class="filter-checkbox-input visually-hidden"
+          type="checkbox"
+          name="filter-checkbox"
+          id="disassembly"
+          value="disassembly"
+        />
         <label class="filter-checkbox-label" for="disassembly">
           <span class="filter-checkbox">
             <svg class="filter-checkbox-icon" width="18" height="18">
@@ -236,7 +247,7 @@
       <div class="filter-item-auto-type filter-item">
         <p class="filter-item-name">Тип автомобіля</p>
         <div class="filter-custom-select-wrapper">
-          <select name="Type" class="filter-select">
+          <select name="Type" class="filter-select" aria-label="Тип кузова">
             <option value="1">Не вибрано</option>
             <option value="2">Легкові</option>
             <option value="3">Позашляховик</option>
@@ -251,7 +262,11 @@
       <div class="filter-item">
         <p class="filter-item-name">Виробник</p>
         <div class="filter-custom-select-wrapper">
-          <select name="Brand" class="filter-select">
+          <select
+            name="Brand"
+            class="filter-select"
+            aria-label="Марка автомобіля"
+          >
             <option value="1">Не вибрано</option>
             <option value="2">BWM</option>
             <option value="3">Audi</option>
@@ -270,7 +285,11 @@
       <div class="filter-item">
         <p class="filter-item-name">Марка</p>
         <div class="filter-custom-select-wrapper">
-          <select name="Model" class="filter-select">
+          <select
+            name="Model"
+            class="filter-select"
+            aria-label="Модель автомобіля"
+          >
             <option value="1">Не вибрано</option>
             <option value="2">X1</option>
             <option value="3">X3</option>
@@ -289,7 +308,11 @@
         <p class="filter-item-name">Рік випуску</p>
         <div class="filter-data-search-box">
           <div class="filter-custom-select-wrapper">
-            <select id="at-year-from" class="filter-select-year">
+            <select
+              id="at-year-from"
+              class="filter-select-year"
+              aria-label="Рік випуску від"
+            >
               <option value="0">Рік, від</option>
               <option value="2025">2025</option>
               <option value="2024">2024</option>
@@ -375,7 +398,11 @@
             </div>
           </div>
           <div class="filter-custom-select-wrapper">
-            <select id="at-year-to" class="filter-select-year">
+            <select
+              id="at-year-to"
+              class="filter-select-year"
+              aria-label="Рік випуску до"
+            >
               <option value="0">Рік, до</option>
               <option value="2025">2025</option>
               <option value="2024">2024</option>
@@ -472,6 +499,7 @@
     </div>
   </form>
 </section>
+
           <div class="container">
   <h1 class="catalog-title">Каталог техніки</h1>
   <div class="popular-status">
@@ -755,6 +783,7 @@
               id="name"
               placeholder="Ввести ім'я"
               required
+              autocomplete="off"
             />
           </div>
           <div class="callback-content-input">
@@ -768,6 +797,7 @@
               id="phone"
               placeholder="+380"
               required
+              autocomplete="off"
             />
           </div>
         </div>
