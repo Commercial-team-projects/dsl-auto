@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const dburi = 'mongodb+srv://username:KnAT927_Za3aM@cluster0.traqjrn.mongodb.net/?appName=Cluster0/myDatabase'
+const dburi = 'mongodb+srv://username:q.KnAT927_Za3aM@cluster0.traqjrn.mongodb.net/?appName=Cluster0/myDatabase'
 
 // 1. Connect to MongoDB (replace with your connection string)
 
@@ -152,24 +152,24 @@ async function deleteUser(email) {
 
 // Example usage:
 // (async () => {
-    //   await createUser('Alice Smith', 'alice@example.com', 30);
-    // await findUsers();
-    //   await findUserByEmail('alice@example.com');
-    //   await updateUserAge('alice@example.com', 31);
-    //   await deleteUser('bob@example.com');
-    //   await findUsers(); // Verify deletion
-    // mongoose.disconnect();
-    // console.log('MongoDB disconnected.');
+//   await createUser('Alice Smith', 'alice@example.com', 30);
+// await findUsers();
+//   await findUserByEmail('alice@example.com');
+//   await updateUserAge('alice@example.com', 31);
+//   await deleteUser('bob@example.com');
+//   await findUsers(); // Verify deletion
+// mongoose.disconnect();
+// console.log('MongoDB disconnected.');
 // })();
 
-export default { 
-    createUser, 
-    findUsers, 
-    findUserById, 
-    findUserByName, 
-    findUserByEmail, 
+export default {
+    createUser,
+    findUsers,
+    findUserById,
+    findUserByName,
+    findUserByEmail,
     updateUserAge,
     updateUserName,
-    updateUserPassword, 
-    deleteUser 
+    updateUserPassword,
+    deleteUser
 };

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+</head>
+<h1>Queries</h1>
+    <button type="submit" class="js-btn">Запит POST</button>
+</body>
+</html>
+<script>
+    const btnElem = document.querySelector('.js-btn');
+    btnElem.addEventListener('click',()=>{
+        const url =  `http://localhost:4000/api/testimonials/createdb/`
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      id: 1,
+      name: 'Валя',
+      email: 'valentina@gmail.com',
+      password: 'valentinapassword',
+      testimonial: 'BMW XM - тачка вогонь!'
+    }),
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Ошибка:', error));
+    })
+   
+</script>

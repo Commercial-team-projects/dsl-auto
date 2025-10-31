@@ -11,6 +11,8 @@ import express from 'express';
 
 import userRoutes from './routes/userRoutes.js';
 import carRoutes from './routes/carRoutes.js';
+import testimonialRoutes from './routes/testimopnialRoutes.js';
+// import categoryRoutes from './routes/categoryRoutes.js'
 
 // 1. Define your GraphQL Schema
 // const schema = buildSchema(`
@@ -46,10 +48,10 @@ const PORT = 4000;
 app.use(express.json());
 
 app.all('/secret', (req, res, next) => {
-  console.log('Accessing the secret section ...')
-  next() // pass control to the next handler
+    console.log('Accessing the secret section ...')
+    next() // pass control to the next handler
 }, (req, res) => {
-  res.send('Hello from B!')
+    res.send('Hello from B!')
 })
 
 // 4. Mount the GraphQL handler
@@ -60,8 +62,17 @@ app.all('/secret', (req, res, next) => {
 // }));
 
 
-app.use('/api', userRoutes)
-app.use('/car', carRoutes);
+app.use('/api', userRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/users/:id', userRoutes);
+
+// app.use('/api/categories', categoryRoutes);
+
+app.use('/api/testimonials', testimonialRoutes);
+
+
+app.use('/api/cars', carRoutes);
+app.use('/api/cars/:id', carRoutes);
 
 
 // Good API structure
@@ -74,7 +85,7 @@ app.use('/car', carRoutes);
 // Filtering and pagination
 // app.get('/api/products?category=electronics&sort=price&limit=10&page=2');
 
-
+/*
 // GET all items
 app.use('/api/items', (req, res) => {
     res.json(items);
@@ -128,8 +139,8 @@ app.delete('/api/items/:id', (req, res) => {
         res.status(404).json({ message: 'Item not found' });
     }
 });
-
-
+*/
+/*
 //returns a list of categories
 app.get('/cars/category-list', (req, res) => {
     res.json(items);
@@ -150,7 +161,7 @@ app.get('/cars/category', (req, res) => {
 app.get('/cars/{id}', (req, res) => {
     res.json(items);
 });
-
+*/
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
