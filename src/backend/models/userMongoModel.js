@@ -4,7 +4,8 @@ const dburi = 'mongodb+srv://username:KnAT927_Za3aM@cluster0.traqjrn.mongodb.net
 
 // 1. Connect to MongoDB (replace with your connection string)
 
-mongoose.connect(dburi)
+mongoose
+    .connect(dburi)
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Error connecting to MongoDB:', err));
 
@@ -68,7 +69,6 @@ async function findUsers() {
         console.error('Error finding users:', error);
     }
 }
-
 // Find a single document by a specific field
 async function findUserById(id) {
     try {
