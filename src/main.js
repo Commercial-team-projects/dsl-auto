@@ -1,6 +1,7 @@
 import './scss/styles.scss';
 import './js/mobile-menu';
 import './js/leave-request-btn';
+import { loadReviews } from './js/reviews';
 
 // testimonials for mobile
 
@@ -63,3 +64,6 @@ mediaQuery.addEventListener('change', e => {
     location.reload();
   }
 });
+
+// reviews
+loadReviews();
