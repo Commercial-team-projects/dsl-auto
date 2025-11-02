@@ -45,7 +45,8 @@ const getUserByEmailDB = async (req, res) => {
 };
 const updateUserNameDB = async (req, res) => {
   try {
-    const user = await userMongoModel.updateUserName(req.params.name);
+    const { id, name } = req.body;
+    const user = await userMongoModel.updateUserName(id, name);
     if (!user) {
       return res.status(404).json({ message: `User with email: ${email} not found` });
     }
@@ -54,31 +55,23 @@ const updateUserNameDB = async (req, res) => {
     res.status(500).json({ message: 'Error retrieving user', error: error.message });
   }
 };
+
 const updateUserPasswordDB = async (req, res) => {
   try {
-    const user = await userMongoModel.updateUserPassword(req.params.age);
+    const { id, password } = req.body;
+    const user = await userMongoModel.updateUserPassword(id, password);
     if (!user) {
-      return res.status(404).json({ message: `User with email: ${email} not found` });
+      return res.status(400).json({ message: `User could not be created` });
     }
     res.status(200).json(user);
   } catch (error) {
     res.status(500).json({ message: 'Error retrieving user', error: error.message });
   }
 };
-const updateUserAgeDB = async (req, res) => {
-  try {
-    const user = await userMongoModel.updateUserAge(req.params.age);
-    if (!user) {
-      return res.status(404).json({ message: `User with email: ${email} not found` });
-    }
-    res.status(200).json(user);
-  } catch (error) {
-    res.status(500).json({ message: 'Error retrieving user', error: error.message });
-  }
-};
+
 const createUserDB = async (req, res) => {
   try {
-    const user = await userMongoModel.createUser(req.params.id, req.params.name, req.params.age, req.params.email, req.params.password);
+    const user = await userMongoModel.createUser(req.body.id, req.body.name, req.body.age, req.body.email, req.body.password);
     if (!user) {
       return res.status(404).json({ message: `User with email: ${email} not found` });
     }
@@ -104,7 +97,6 @@ export {
   getUserByIdDB, 
   getUserByNameDB, 
   getUserByEmailDB, 
-  updateUserAgeDB,
   updateUserNameDB, 
   updateUserPasswordDB,
   createUserDB, 

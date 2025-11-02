@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 
 // import { createHandler } from 'graphql-http/lib/use/express';
 // import { buildSchema } from 'graphql';
@@ -46,6 +47,7 @@ const app = express();
 const PORT = 4000;
 
 app.use(express.json());
+app.use(cors({ origin: '*' }));
 
 app.all('/secret', (req, res, next) => {
     console.log('Accessing the secret section ...')
@@ -63,8 +65,7 @@ app.all('/secret', (req, res, next) => {
 
 
 app.use('/api', userRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/users/:id', userRoutes);
+
 
 // app.use('/api/categories', categoryRoutes);
 

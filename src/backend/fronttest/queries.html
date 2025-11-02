@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Queries</title>
-</head>
-<h1>Queries</h1>
-    <button type="submit" class="js-btn">Запит POST</button>
-</body>
+    <script type="module" src="sendqueries.js"></script>
+  </head>
+  <body>
+    <h1>Queries</h1>
+
+    <h2>Відправити запит</h2>
+    <select name="selectMethod">
+      <!--Supplement an id here instead of using 'name'-->
+      <option value="GET" selected>GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+    </select><br><br>
+    <form id="sendReq" action="" method="get">
+      <label for="urlReq">Enter URL:</label><br>
+      <input type="text" id="urlReq" name="urlReq" style="min-width: 400px;">
+      <p style="margin-bottom: 0px;">Enter headers:</p>
+      <textarea  id="urlReqHeaders" name="urlReqHeaders"></textarea>
+      <!-- <input type="submit" class="js-btn" id="sendReqBtn" value="Відправити запит"> -->
+    </form>
+    <button type="submit" class="js-btn" id="sendReqBtn">Відправити запит</button>
+    <h2>Додати користувача</h2>
+    <form id="sendUser" action="" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname21" name="firstname">
+      <label for="lname">Last name:</label>
+      <input type="password" id="lname22" name="lastname" autocomplete >
+      <label for="lname">Email:</label>
+      <input type="email" id="lname23" name="lastname">
+      <input type="submit" class="js-btn" value="Додати користувача">
+    </form>
+    
+    <h2>Додати відгук</h2>
+    <form id="sendTestimonial" action="" method="post">
+      <label for="fname">Відгук:</label>
+      <input type="textarea" id="fname1" name="firstname">
+      <label for="fname">Ім'я:</label>
+      <input type="text" id="fname2" name="firstname">
+      <label for="lname">Пароль:</label>
+      <input type="text" id="lname3" name="lastname">
+      <input type="submit" value="Відправити відгук" class="js-btn">
+    </form>
+    
+    <h2>Додати авто</h2>
+    <form id="sendCar" action="" method="post">
+      <label for="fname">Марка:</label>
+      <input type="text" id="fname11" name="firstname">
+      <label for="lname">Модель:</label>
+      <input type="text" id="lname12" name="lastname">
+      <label for="fname">Об'єм:</label>
+      <input type="text" id="fname13" name="firstname">
+      <label for="fname">Рік:</label>
+      <input type="text" id="fname14" name="firstname">
+      <label for="fname">Пробіг:</label>
+      <input type="text" id="fname15" name="firstname">
+      <label for="fname">Привід:</label>
+      <input type="text" id="fname16" name="firstname">
+      <label for="fname">Трансмісія:</label>
+      <input type="text" id="fname17" name="firstname">
+      <input type="submit" value="Додати авто">
+    </form>
+
+  </body>
 </html>
-<script>
-    const btnElem = document.querySelector('.js-btn');
-    btnElem.addEventListener('click',()=>{
-        const url =  `http://localhost:4000/api/testimonials/createdb/`
-  fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      id: 1,
-      name: 'Валя',
-      email: 'valentina@gmail.com',
-      password: 'valentinapassword',
-      testimonial: 'BMW XM - тачка вогонь!'
-    }),
-  })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Ошибка:', error));
-    })
-   
-</script>

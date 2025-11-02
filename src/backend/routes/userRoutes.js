@@ -3,7 +3,7 @@
 import express from 'express';
 
 import { getUsers, getUserById, getUserByName, getUserByAge } from '../controllers/userController.js';
-import { getUsersDB, getUserByIdDB, getUserByNameDB, getUserByEmailDB, updateUserAgeDB, updateUserNameDB, updateUserPasswordDB, createUserDB, deleteUserDB } from '../controllers/userControllerDB.js';
+import { getUsersDB, getUserByIdDB, getUserByNameDB, getUserByEmailDB, updateUserNameDB, updateUserPasswordDB, createUserDB, deleteUserDB } from '../controllers/userControllerDB.js';
 
 const router = express.Router();
 
@@ -19,10 +19,9 @@ router.get('/userdb/:id', getUserByIdDB);
 router.get('/namedb/:name', getUserByNameDB);
 router.get('/emaildb/:email', getUserByEmailDB);
 
-router.post('/userdb/:age', updateUserAgeDB);
-router.post('/userdb/:name', updateUserNameDB);
-router.post('/userdb/:password', updateUserPasswordDB);
-router.put('/userdb/:id', createUserDB);
+router.put('/userdb/:name', updateUserNameDB);
+router.put('/userdb/:password', updateUserPasswordDB);
+router.post('/userdb/:id', createUserDB);
 router.delete('/userdb/:id', deleteUserDB);
 
 // router.get('/user/:id/name/:name', (req, res)=>{

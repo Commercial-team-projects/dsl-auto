@@ -99,24 +99,11 @@ async function findUserByEmail(email) {
 }
 
 // Update a document
-async function updateUserAge(email, newAge) {
-    try {
-        const updatedUser = await User.findOneAndUpdate(
-            { email },
-            { age: newAge },
-            { new: true } // Return the updated document
-        );
-        console.log('User updated:', updatedUser);
-        return updatedUser;
-    } catch (error) {
-        console.error('Error updating user:', error);
-    }
-}
 async function updateUserName(email, newName) {
     try {
         const updatedUser = await User.findOneAndUpdate(
             { email },
-            { age: newName },
+            { name: newName },
             { new: true } // Return the updated document
         );
         console.log('User updated:', updatedUser);
@@ -129,7 +116,7 @@ async function updateUserPassword(email, newPassword) {
     try {
         const updatedUser = await User.findOneAndUpdate(
             { email },
-            { age: newPassword },
+            { password: newPassword },
             { new: true } // Return the updated document
         );
         console.log('User updated:', updatedUser);
@@ -168,7 +155,6 @@ export default {
     findUserById,
     findUserByName,
     findUserByEmail,
-    updateUserAge,
     updateUserName,
     updateUserPassword,
     deleteUser
