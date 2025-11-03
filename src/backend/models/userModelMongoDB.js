@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
+import dburi from './config.js';
 
-const dburi = 'mongodb+srv://username:q.KnAT927_Za3aM@cluster0.traqjrn.mongodb.net/?appName=Cluster0/myDatabase'
 
 // 1. Connect to MongoDB (replace with your connection string)
 
@@ -10,18 +10,15 @@ mongoose
     .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // 2. Define a Schema
+
 const userSchema = new mongoose.Schema({
-    id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
+
     name: {
         type: String,
         required: true
     },
     age: {
-        type: Number,
+        type: String,
         min: 0
     },
     email: {
@@ -32,7 +29,6 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        unique: true
     },
     createdAt: {
         type: Date,
@@ -47,10 +43,9 @@ const User = mongoose.model('User', userSchema);
 // 4. Use the Model to interact with the database
 
 // Create a new document
-async function createUser(id, name, age, email, password) {
+async function createUser(name, age, email, password) {
     try {
-        const newUser = new User({ id, name, age, email, password });
-        //const newUser = new User({id:2, name: 'John Doe', age: 20, email: 'john2@example.com', password: 'password1234'});
+        const newUser = new User({ name, age, email, password });
         const savedUser = await newUser.save();
         console.log('User created:', savedUser);
         return savedUser;
@@ -129,7 +124,9 @@ async function updateUserPassword(email, newPassword) {
 // Delete a document
 async function deleteUser(email) {
     try {
+        console.log(email)
         const deletedUser = await User.findOneAndDelete({ email });
+
         console.log('User deleted:', deletedUser);
         return deletedUser;
     } catch (error) {

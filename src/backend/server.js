@@ -13,7 +13,7 @@ import cors from 'cors';
 import userRoutes from './routes/userRoutes.js';
 import carRoutes from './routes/carRoutes.js';
 import testimonialRoutes from './routes/testimopnialRoutes.js';
-// import categoryRoutes from './routes/categoryRoutes.js'
+import categoryRoutes from './routes/categoryRoutes.js'
 
 // 1. Define your GraphQL Schema
 // const schema = buildSchema(`
@@ -65,15 +65,10 @@ app.all('/secret', (req, res, next) => {
 
 
 app.use('/api', userRoutes);
-
-
-// app.use('/api/categories', categoryRoutes);
-
+app.use('/api/categories', categoryRoutes);
 app.use('/api/testimonials', testimonialRoutes);
-
-
 app.use('/api/cars', carRoutes);
-app.use('/api/cars/:id', carRoutes);
+
 
 
 // Good API structure

@@ -1,6 +1,6 @@
 // controllers/carControllerDB.js
 
-import carMongoModel from '../models/carMongoModel.js';
+import carMongoModel from '../models/carModelMongoDB.js';
 
 const createCarDB = async (req, res) => {
   try {

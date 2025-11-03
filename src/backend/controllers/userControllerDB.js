@@ -1,6 +1,6 @@
 // controllers/userControllerDB.js
 
-import userMongoModel from '../models/userMongoModel.js';
+import userMongoModel from '../models/userModelMongoDB.js';
 
 const getUsersDB = async (req, res) => {
   try {
@@ -14,7 +14,7 @@ const getUserByIdDB = async (req, res) => {
   try {
     const user = await userMongoModel.findUserById(req.params.id);
     if (!user) {
-      return res.status(404).json({ message: `User with id: ${id} not found` });
+      return res.status(404).json({ message: `User with id: ${req.params.id} not found` });
     }
     res.status(200).json(user);
   } catch (error) {
@@ -25,7 +25,7 @@ const getUserByNameDB = async (req, res) => {
   try {
     const user = await userMongoModel.findUserByName(req.params.name);
     if (!user) {
-      return res.status(404).json({ message: `User with name: ${name} not found` });
+      return res.status(404).json({ message: `User with name: ${req.params.name} not found` });
     }
     res.status(200).json(user);
   } catch (error) {
@@ -36,7 +36,7 @@ const getUserByEmailDB = async (req, res) => {
   try {
     const user = await userMongoModel.findUserByEmail(req.params.email);
     if (!user) {
-      return res.status(404).json({ message: `User with email: ${email} not found` });
+      return res.status(404).json({ message: `User with email: ${req.params.email} not found` });
     }
     res.status(200).json(user);
   } catch (error) {
@@ -45,10 +45,10 @@ const getUserByEmailDB = async (req, res) => {
 };
 const updateUserNameDB = async (req, res) => {
   try {
-    const { id, name } = req.body;
-    const user = await userMongoModel.updateUserName(id, name);
+    const { email, name } = req.body;
+    const user = await userMongoModel.updateUserName(email, name);
     if (!user) {
-      return res.status(404).json({ message: `User with email: ${email} not found` });
+      return res.status(404).json({ message: `User with email: ${req.params.email} not found` });
     }
     res.status(200).json(user);
   } catch (error) {
@@ -58,8 +58,8 @@ const updateUserNameDB = async (req, res) => {
 
 const updateUserPasswordDB = async (req, res) => {
   try {
-    const { id, password } = req.body;
-    const user = await userMongoModel.updateUserPassword(id, password);
+    const { email, password } = req.body;
+    const user = await userMongoModel.updateUserPassword(email, password);
     if (!user) {
       return res.status(400).json({ message: `User could not be created` });
     }
@@ -71,20 +71,21 @@ const updateUserPasswordDB = async (req, res) => {
 
 const createUserDB = async (req, res) => {
   try {
-    const user = await userMongoModel.createUser(req.body.id, req.body.name, req.body.age, req.body.email, req.body.password);
+    const { name, age, email, password } = req.body;
+    const user = await userMongoModel.createUser(name, age, email, password);
     if (!user) {
       return res.status(404).json({ message: `User with email: ${email} not found` });
     }
-    res.status(200).json(user);
+    res.status(201).json(user);
   } catch (error) {
     res.status(500).json({ message: 'Error retrieving user', error: error.message });
   }
 };
 const deleteUserDB = async (req, res) => {
   try {
-    const user = await userMongoModel.deleteUser(req.params.id);
+    const user = await userMongoModel.deleteUser(req.params.email);
     if (!user) {
-      return res.status(404).json({ message: `User with email: ${email} not found` });
+      return res.status(404).json({ message: `User with email: ${req.params.email} not found` });
     }
     res.status(200).json(user);
   } catch (error) {
@@ -92,13 +93,13 @@ const deleteUserDB = async (req, res) => {
   }
 };
 
-export { 
-  getUsersDB, 
-  getUserByIdDB, 
-  getUserByNameDB, 
-  getUserByEmailDB, 
-  updateUserNameDB, 
+export {
+  getUsersDB,
+  getUserByIdDB,
+  getUserByNameDB,
+  getUserByEmailDB,
+  updateUserNameDB,
   updateUserPasswordDB,
-  createUserDB, 
-  deleteUserDB 
+  createUserDB,
+  deleteUserDB
 };

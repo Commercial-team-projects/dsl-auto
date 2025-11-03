@@ -1,6 +1,6 @@
 // controllers/testimonialControllerDB.js
 
-import testimonialMongoModel from '../models/testimonialMongoModel.js';
+import testimonialMongoModel from '../models/testimonialModelMongoDB.js';
 
 const createTestimonialDB = async (req, res) => {
   try {

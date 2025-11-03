@@ -1,0 +1,10 @@
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 4px;
+}
+li > div {
+     border: 1px solid grey;
+
+}

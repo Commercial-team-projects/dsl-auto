@@ -1,5 +1,5 @@
 // controllers/userController.js
-import userModel from '../models/userModel.js';
+import userModel from '../../models/filemodels/userModel.js';
 
 
 const getUsers = async (req, res) => {

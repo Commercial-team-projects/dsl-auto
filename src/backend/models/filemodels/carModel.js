@@ -1,4 +1,4 @@
-import cars from '../db.json' with { type: 'json' };
+import cars from '../../db.json' with { type: 'json' };
 
 const getAllCars = () => {
   return cars;

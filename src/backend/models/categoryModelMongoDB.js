@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
-
-const dburi = 'mongodb+srv://username:q.KnAT927_Za3aM@cluster0.traqjrn.mongodb.net/?appName=Cluster0/myDatabase'
+import dburi from './config.js'
 
 // 1. Connect to MongoDB (replace with your connection string)
 

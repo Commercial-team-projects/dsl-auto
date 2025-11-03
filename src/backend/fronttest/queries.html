@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Queries</title>
+    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="sendqueries.js"></script>
+    <script type="module" src="createusers.js"></script>
   </head>
   <body>
     <h1>Queries</h1>
@@ -15,56 +17,72 @@
       <option value="GET" selected>GET</option>
       <option value="POST">POST</option>
       <option value="PUT">PUT</option>
-      <option value="DELETE">DELETE</option>
-    </select><br><br>
+      <option value="DELETE">DELETE</option></select
+    ><br /><br />
     <form id="sendReq" action="" method="get">
-      <label for="urlReq">Enter URL:</label><br>
-      <input type="text" id="urlReq" name="urlReq" style="min-width: 400px;">
-      <p style="margin-bottom: 0px;">Enter headers:</p>
-      <textarea  id="urlReqHeaders" name="urlReqHeaders"></textarea>
-      <!-- <input type="submit" class="js-btn" id="sendReqBtn" value="Відправити запит"> -->
+      <label for="urlReq">Enter URL:</label><br />
+      <input
+        type="text"
+        id="urlReq"
+        name="urlReq"
+        style="min-width: 400px"
+        value="http://localhost:4000/api/usersdb"
+      />
+      <p style="margin-bottom: 0px">Enter headers:</p>
+      <textarea id="urlReqHeaders" name="urlReqHeaders"></textarea>
     </form>
-    <button type="submit" class="js-btn" id="sendReqBtn">Відправити запит</button>
+    <button type="submit" class="js-btn" id="sendReqBtn">
+      Відправити запит
+    </button>
+    <ul class="userList"></ul>
     <h2>Додати користувача</h2>
-    <form id="sendUser" action="" method="post">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname21" name="firstname">
-      <label for="lname">Last name:</label>
-      <input type="password" id="lname22" name="lastname" autocomplete >
-      <label for="lname">Email:</label>
-      <input type="email" id="lname23" name="lastname">
-      <input type="submit" class="js-btn" value="Додати користувача">
+    <form id="sendUser">
+      <label for="username">Name:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="userage">Age:</label><br />
+      <input type="text" id="userage" name="userage" /><br />
+      <label for="useremail">Email:</label><br />
+      <input type="email" id="useremail" name="useremail" /><br />
+      <label for="userpassword">Password:</label><br />
+      <input
+        type="password"
+        id="userpassword"
+        name="userpassword"
+        autocomplete
+      /><br />
     </form>
-    
+    <button type="submit" class="js-btn" id="createUserBtn">
+      Додати користувача
+    </button>
+
     <h2>Додати відгук</h2>
     <form id="sendTestimonial" action="" method="post">
       <label for="fname">Відгук:</label>
-      <input type="textarea" id="fname1" name="firstname">
+      <input type="textarea" id="fname1" name="firstname" />
       <label for="fname">Ім'я:</label>
-      <input type="text" id="fname2" name="firstname">
+      <input type="text" id="fname2" name="firstname" />
       <label for="lname">Пароль:</label>
-      <input type="text" id="lname3" name="lastname">
-      <input type="submit" value="Відправити відгук" class="js-btn">
+      <input type="text" id="lname3" name="lastname" />
+      <input type="submit" value="Відправити відгук" class="js-btn" />
     </form>
-    
+
     <h2>Додати авто</h2>
     <form id="sendCar" action="" method="post">
       <label for="fname">Марка:</label>
-      <input type="text" id="fname11" name="firstname">
+      <input type="text" id="fname11" name="firstname" />
       <label for="lname">Модель:</label>
-      <input type="text" id="lname12" name="lastname">
+      <input type="text" id="lname12" name="lastname" />
       <label for="fname">Об'єм:</label>
-      <input type="text" id="fname13" name="firstname">
+      <input type="text" id="fname13" name="firstname" />
       <label for="fname">Рік:</label>
-      <input type="text" id="fname14" name="firstname">
+      <input type="text" id="fname14" name="firstname" />
       <label for="fname">Пробіг:</label>
-      <input type="text" id="fname15" name="firstname">
+      <input type="text" id="fname15" name="firstname" />
       <label for="fname">Привід:</label>
-      <input type="text" id="fname16" name="firstname">
+      <input type="text" id="fname16" name="firstname" />
       <label for="fname">Трансмісія:</label>
-      <input type="text" id="fname17" name="firstname">
-      <input type="submit" value="Додати авто">
+      <input type="text" id="fname17" name="firstname" />
+      <input type="submit" value="Додати авто" />
     </form>
-
   </body>
 </html>

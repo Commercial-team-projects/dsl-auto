@@ -1,9 +1,10 @@
 import express from 'express';
-import { getCars, getCarById } from '../controllers/carController.js';
+import { getCarsDB, getCarByIdDB } from '../controllers/carControllerDB.js';
+
 
 const router = express.Router();
 
-router.get('/', getCars);
-router.get('/:id', getCarById);
+router.get('/', getCarsDB);
+router.get('/:id', getCarByIdDB);
 
 export default router;
