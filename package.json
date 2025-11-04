@@ -8,7 +8,8 @@
     "start-server": "nodemon .\\src\\backend\\server.js",
     "dev": "concurrently \"npm run start-client\" \"npm run start-server\"",
     "build": "vite build --base=/dsl-auto/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed": "node .\\src\\backend\\models\\seedCars.js"
   },
   "devDependencies": {
     "glob": "^11.0.0",

@@ -29,9 +29,6 @@ selectedMethodElem.addEventListener('change', e => {
 });
 
 btnElem.addEventListener('click', sendQuery);
-function createLi(content) {
-  return `<li>${content}</li>`
-}
 
 export async function sendQuery() {
 

@@ -63,8 +63,7 @@ app.all('/secret', (req, res, next) => {
 //     graphiql: true, // Enable the GraphiQL in-browser IDE for testing
 // }));
 
-
-app.use('/api', userRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 app.use('/api/cars', carRoutes);

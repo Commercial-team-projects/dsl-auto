@@ -1,86 +1,38 @@
-import mongoose from 'mongoose';
-import cars from '../db.json' with { type: 'json' };
-import dburi from './config.js'
+import mongoose from './utils/db.js';
+
 
 // 1. Connect to MongoDB (replace with your connection string)
 
-mongoose
-    .connect(dburi)
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // 2. Define a Schema
-const carSchema = new mongoose.Schema({
-    id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
-    brand: {
-        type: String,
-        required: true
-    },
-    model: {
-        type: String,
-        required: true
-    },
-    year: {
-        type: String,
-        required: true
-    },
-    specifications: {
-        year: {
-            type: String,
-            required: true
-        },
-        engine: {
-            fuel_type: {
-                type: String,
-                required: true
-            },
-            volume_l: {
-                type: String,
-                required: true
-            },
-        },
-        drive_type: {
-            type: String,
-            required: true
-        },
-        transmission: {
-            type: String,
-            required: true
-        },
-        doors: {
-            type: String,
-            required: true
-        },
-        color: {
-            type: String,
-            required: true
-        },
-        country_of_origin: {
-            type: String,
-            required: true
-        },
-    },
-    advantages: {
-        type: [String],
-        required: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    price: {
-        type: Number,
-        required: true
-    },
-    rating: {
-        type: Number,
-        required: true
-    },
-});
+// --- Subschemas ---
+const engineSchema = new mongoose.Schema({
+    fuel_type: { type: String, required: true },
+    volume_l: { type: String, required: true },
+  });
+  
+  const specificationsSchema = new mongoose.Schema({
+    engine: engineSchema,
+    drive_type: { type: String, required: true },
+    transmission: { type: String, required: true },
+    doors: { type: String, required: true },
+    color: { type: String, required: true },
+    country_of_origin: { type: String, required: true },
+  });
+  
+  // --- Main car schema ---
+  const carSchema = new mongoose.Schema({
+    id: { type: Number, required: true, unique: true },
+    brand: { type: String, required: true },
+    model: { type: String, required: true },
+    specifications: specificationsSchema,
+    advantages: { type: [String], required: true },
+    description: { type: String, required: true },
+    price: { type: Number, required: true },
+    rating: { type: Number, required: true },
+    stock: { type: String, required: true },
+    custom: { type: String, required: true },
+  }, { timestamps: true, versionKey: false });
 
 // 3. Create a Model from the Schema
 // The first argument is the singular name of your collection (e.g., 'Car' for 'cars')
@@ -88,81 +40,73 @@ const Car = mongoose.model('Car', carSchema);
 
 // 4. Use the Model to interact with the database
 
-// Create a new document
-async function createCar(id, brand, model, year, specifications, advantages, description, price, rating) {
-    try {
-        const newCar = new Car(...cars[0]);
-        // const newCar = new Car(id, brand, model, year, specifications, advantages, description, price, rating);
-        const savedCar = await newCar.save();
-        console.log('Car created:', savedCar);
-        return savedCar;
-    } catch (error) {
-        console.error('Error creating Car:', error);
-    }
-}
 
-// Find documents
-async function findCars() {
-    try {
-        const cars = await Car.find({}); // Find all cars
-        console.log('All cars:', cars);
-        return cars;
-    } catch (error) {
-        console.error('Error finding cars:', error);
-    }
-}
+// --- CRUD Operations ---
 
-// Find a single document by a specific field
-async function findCarById(id) {
+async function createCar(data) {
     try {
-        const car = await Car.findOne({ id });
-        console.log('Car found by id:', car);
-        return car;
+      const newCar = new Car(data);
+      const savedCar = await newCar.save();
+      console.log('Car created:', savedCar);
+      return savedCar;
     } catch (error) {
-        console.error('Error finding car by id:', error);
+      console.error('Error creating car:', error);
+      throw error;
     }
-}
-async function findCarByBrand(brand) {
+  }
+  
+  async function findCars() {
     try {
-        const car = await Car.findOne({ brand });
-        console.log('Car found by brand:', car);
-        return car;
+      const cars = await Car.find({});
+      console.log('All cars:', cars);
+      return cars;
     } catch (error) {
-        console.error('Error finding car by brand:', error);
+      console.error('Error finding cars:', error);
+      throw error;
     }
-}
-
-// Update a document
-async function updateCarPrice(id, newPrice) {
+  }
+  
+  async function findCarById(id) {
     try {
-        const updatedCar = await Car.findOneAndUpdate(
-            { id },
-            { price: newPrice },
-            { new: true } // Return the updated document
-        );
-        console.log('Car updated:', updatedCar);
-        return updatedCar;
+      return await Car.findOne({ id });
     } catch (error) {
-        console.error('Error updating car:', error);
+      console.error('Error finding car by id:', error);
+      throw error;
     }
-}
-
-// Delete a document
-async function deleteCar(id) {
+  }
+  
+  async function findCarByBrand(brand) {
     try {
-        const deletedCar = await Car.findOneAndDelete({ id });
-        console.log('Car deleted:', deletedCar);
-        return deletedCar;
+      return await Car.findOne({ brand });
     } catch (error) {
-        console.error('Error deleting car:', error);
+      console.error('Error finding car by brand:', error);
+      throw error;
     }
-}
-
-export default {
+  }
+  
+  async function updateCarPrice(id, newPrice) {
+    try {
+      return await Car.findOneAndUpdate({ id }, { price: newPrice }, { new: true });
+    } catch (error) {
+      console.error('Error updating car:', error);
+      throw error;
+    }
+  }
+  
+  async function deleteCar(id) {
+    try {
+      return await Car.findOneAndDelete({ id });
+    } catch (error) {
+      console.error('Error deleting car:', error);
+      throw error;
+    }
+  }
+  
+  export default {
     createCar,
     findCars,
     findCarById,
     findCarByBrand,
     updateCarPrice,
-    deleteCar
-};
+    deleteCar,
+  };

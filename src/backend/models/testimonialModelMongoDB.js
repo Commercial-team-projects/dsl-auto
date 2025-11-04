@@ -1,13 +1,6 @@
-import mongoose from 'mongoose';
-import dburi from './config.js'
-
+import mongoose from './utils/db.js';
 
 // 1. Connect to MongoDB
-
-mongoose
-    .connect(dburi)
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // 2. Define a Schema
 const testimonialSchema = new mongoose.Schema({
