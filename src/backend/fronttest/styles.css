@@ -1,3 +1,4 @@
+@import "tailwindcss";
 li{
     display: flex;
     flex-direction: row;
@@ -7,4 +8,14 @@ li{
 li > div {
      border: 1px solid grey;
 
+}
+.wrapper{
+    display: flex;
+    column-gap: 10px;
+}
+#addCar,#sendTestimonial, #sendUser{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    row-gap: 4px;
 }

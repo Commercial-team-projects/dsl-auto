@@ -4,6 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 import { NodePackageImporter } from 'sass-embedded';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ command }) => {
   return {
@@ -40,6 +41,7 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       injectHTML(),
+      tailwindcss(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',

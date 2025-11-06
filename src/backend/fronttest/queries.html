@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="sendqueries.js"></script>
     <script type="module" src="createusers.js"></script>
+    <script type="module" src="createcars.js"></script>
+    <script type="module" src="createcategories.js"></script>
   </head>
   <body>
-    <h1>Queries</h1>
-
+    <h1 class="text-3xl font-bold underline">Queries</h1>
+<input
+  class="block appearance-none bg-white placeholder-gray-600 border border-indigo-200 rounded w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:border-indigo-400 focus:placeholder-gray-400 focus:ring-2 focus:ring-indigo-200"
+  placeholder="jane@example.com"
+/>
+<button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Нажми меня</button>
     <h2>Відправити запит</h2>
-    <select name="selectMethod">
-      <!--Supplement an id here instead of using 'name'-->
-      <option value="GET" selected>GET</option>
-      <option value="POST">POST</option>
-      <option value="PUT">PUT</option>
-      <option value="DELETE">DELETE</option></select
-    ><br /><br />
     <form id="sendReq" action="" method="get">
-      <label for="urlReq">Enter URL:</label><br />
+      <label for="urlReq">Ввести URL:</label>
       <input
         type="text"
         id="urlReq"
@@ -28,61 +27,122 @@
         style="min-width: 400px"
         value="http://localhost:4000/api/users/usersdb"
       />
-      <p style="margin-bottom: 0px">Enter headers:</p>
+      <select name="selectMethod">
+      <!--Supplement an id here instead of using 'name'-->
+      <option value="GET" selected>GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+    </select>
+      <p style="margin-bottom: 0px">Додати headers:</p>
       <textarea id="urlReqHeaders" name="urlReqHeaders"></textarea>
+      
     </form>
     <button type="submit" class="js-btn" id="sendReqBtn">
       Відправити запит
     </button>
-    <ul class="userList"></ul>
-    <h2>Додати користувача</h2>
-    <form id="sendUser">
-      <label for="username">Name:</label><br />
-      <input type="text" id="username" name="username" /><br />
-      <label for="userage">Age:</label><br />
-      <input type="text" id="userage" name="userage" /><br />
-      <label for="useremail">Email:</label><br />
-      <input type="email" id="useremail" name="useremail" /><br />
-      <label for="userpassword">Password:</label><br />
-      <input
-        type="password"
-        id="userpassword"
-        name="userpassword"
-        autocomplete
-      /><br />
-    </form>
-    <button type="submit" class="js-btn" id="createUserBtn">
-      Додати користувача
-    </button>
+    <div class="wrapper">
+      
+      <div>
+        <h2>Додати користувача</h2>
+        
+      
+        <form id="sendUser">
+          <label for="urlReqUser">Ввести URL:</label>
+          <input
+        type="text"
+        id="urlReqUser"
+        name="urlReqUser"
+        value="http://localhost:4000/api/users/usercreatedb"
+      />
+          <label for="username">Ім'я:</label>
+          <input type="text" id="username" name="username" />
+          <label for="userage">Вік:</label>
+          <input type="text" id="userage" name="userage" />
+          <label for="useremail">Email:</label>
+          <input type="email" id="useremail" name="useremail" />
+          <label for="userpassword">Пароль:</label>
+          <input
+            type="password"
+            id="userpassword"
+            name="userpassword"
+            autocomplete
+          />
+        </form>
+        <button type="submit" class="js-btn" id="createUserBtn">
+          Додати користувача
+        </button>
+        <ul class="userList"></ul>
+      </div>
+      <div>
+        <h2>Додати відгук</h2>
+        <form id="sendTestimonial">
 
-    <h2>Додати відгук</h2>
-    <form id="sendTestimonial">
-      <label for="fname">Відгук:</label>
-      <input type="textarea" id="fname1" name="firstname" />
-      <label for="fname">Ім'я:</label>
-      <input type="text" id="fname2" name="firstname" />
-      <label for="lname">Пароль:</label>
-      <input type="text" id="lname3" name="lastname" />
-      <input type="submit" value="Відправити відгук" class="js-btn" />
-    </form>
-
-    <h2>Додати авто</h2>
-    <form id="sendCar">
-      <label for="fname">Марка:</label>
-      <input type="text" id="fname11" name="firstname" />
-      <label for="lname">Модель:</label>
-      <input type="text" id="lname12" name="lastname" />
-      <label for="fname">Об'єм:</label>
-      <input type="text" id="fname13" name="firstname" />
-      <label for="fname">Рік:</label>
-      <input type="text" id="fname14" name="firstname" />
-      <label for="fname">Пробіг:</label>
-      <input type="text" id="fname15" name="firstname" />
-      <label for="fname">Привід:</label>
-      <input type="text" id="fname16" name="firstname" />
-      <label for="fname">Трансмісія:</label>
-      <input type="text" id="fname17" name="firstname" />
-      <input type="submit" value="Додати авто" />
-    </form>
-  </body>
+          <label for="urlReqTestimonial">Ввести URL:</label>
+          <input
+        type="text"
+        id="urlReqTestimonial"
+        name="urlReqTestimonial"
+        value="http://localhost:4000/api/testimonials/testimonialcreatedb"
+      />
+          <label for="user">Ім'я:</label>
+          <input type="text" id="user" name="user" />
+          <label for="pass">Пароль:</label>
+          <input type="password" id="pass" name="pass" />
+          <label for="testimonial">Відгук:</label>
+          <input type="textarea" id="testimonial" name="testimonial" />
+        </form>
+        <button type="submit" class="js-btn" id="createTestimonialBtn">
+          Додати відгук
+        </button>
+      </div>
+      <div>
+        <h2>Додати авто</h2>
+        <form id="addCar">
+          <label for="urlReqCar">Ввести URL:</label>
+          <input
+        type="text"
+        id="urlReqCar"
+        name="urlReqCar"
+        value="http://localhost:4000/api/cars/createcardb"
+      />
+          <label for="carBrand">Марка:</label>
+          <input type="text" id="carBrand" name="carBrand" />
+          <label for="carModel">Модель:</label>
+          <input type="text" id="carModel" name="carModel" />
+          <label for="carYear">Рік:</label>
+          <input type="text" id="carYear" name="carYear" />
+          <label for="carType">Тип кузова:</label>
+          <input type="text" id="carType" name="carType" />
+          <label for="carFuelType">Тип двигуна:</label>
+          <input type="text" id="carFuelType" name="carFuelType" />
+          <label for="carEngineVolume">Об'єм двигуна:</label>
+          <input type="text" id="carEngineVolume" name="carEngineVolume" />
+          <label for="carDriveType">Привід:</label>
+          <input type="text" id="carDriveType" name="carDriveType" />
+          <label for="carTransmission">Трансмісія:</label>
+          <input type="text" id="carTransmission" name="carTransmission" />
+          <label for="carDoors">Дверей:</label>
+          <input type="text" id="carDoors" name="carDoors" />
+          <label for="carDoors">Колір:</label>
+          <input type="text" id="carDoors" name="carDoors" />
+          <label for="carCountry">Країна:</label>
+          <input type="text" id="carCountry" name="carCountry" />
+          <label for="carAdvanages">Переваги:</label>
+          <input type="text" id="carAdvanages" name="carAdvanages" />
+          <label for="carDescription">Опис:</label>
+          <input type="text" id="carDescription" name="carDescription" />
+          <label for="carPrice">Ціна:</label>
+          <input type="text" id="carPrice" name="carPrice" />
+          <label for="carStock">Наявність:</label>
+          <input type="text" id="carStock" name="carStock" />
+          <label for="carCustomType">Тип розмитнення:</label>
+          <input type="text" id="carCustomType" name="carCustomType" />
+          <label for="carMileage">Пробіг:</label>
+          <input type="text" id="carMileage" name="carMileage" />
+        </form>
+        <button type="submit" class="js-btn" id="createTestBtn">Додати авто</button>
+          </body>
+      </div>
+    </div>
 </html>

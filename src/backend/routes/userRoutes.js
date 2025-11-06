@@ -19,8 +19,8 @@ router.get('/usersdb', getUsersDB);
 router.get('/userdb/:id', getUserByIdDB);
 router.get('/namedb/:name', getUserByNameDB);
 router.get('/emaildb/:email', getUserByEmailDB);
-router.put('/updatenamedb/:name', updateUserNameDB);
-router.put('/updatepassdb/:password', updateUserPasswordDB);
+router.put('/nameupdatedb/:name', updateUserNameDB);
+router.put('/passupdatedb/:password', updateUserPasswordDB);
 router.post('/usercreatedb/', createUserDB);
 router.delete('/userdeletedb/:email', deleteUserDB);
 

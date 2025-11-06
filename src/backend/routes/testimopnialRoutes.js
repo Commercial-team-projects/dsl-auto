@@ -5,12 +5,10 @@ import { createTestimonialDB, deleteTestimonialDB, getTestimonialByIdDB, getTest
 
 const router = express.Router();
 
-//Working with mongodb by using mongoose
-router.get('/:id', getTestimonialByIdDB);
-router.get('/', getTestimonialsDB);
-
-router.post('/updatedb/:id', updateTestimonialDB);
-router.put('/createdb/:id', createTestimonialDB);
-router.delete('/deletedb/:id', deleteTestimonialDB);
+router.get('/testimonialsdb', getTestimonialsDB);
+router.get('/testimonialsdb/:id', getTestimonialByIdDB);
+router.post('/testimonialupdatedb/:id', updateTestimonialDB);
+router.put('/testimonialcreatedb/:id', createTestimonialDB);
+router.delete('/testimonialdeletedb/:id', deleteTestimonialDB);
 
 export default router;

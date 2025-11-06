@@ -31,7 +31,7 @@ export async function createUser(e) {
       'Content-Type': 'application/json; charset=UTF-8',
     },
   };
-  const urlReqElem = document.querySelector('#urlReq').value;
+  const urlReqElem = document.querySelector('#urlReqUser').value;
   console.log(options)
   const response = await fetch(urlReqElem, options);
   if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
