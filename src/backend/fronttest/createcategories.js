@@ -1,23 +1,9 @@
 
-//const url = 'http://localhost:4000/api/usersdb';
+const btnElem = document.querySelector('#createCategoryBtn');
 
+btnElem.addEventListener('click', createCategoryBtn);
 
-function Card() {
-    return (
-        <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-4">
-            <h2 className="text-xl font-medium text-black">Привет!</h2>
-            <p className="text-gray-500">Это карточка на Tailwind</p>
-        </div>
-    );
-}
-Card();
-const btnElem = document.querySelector('#createUserBtn');
-
-
-
-btnElem.addEventListener('click', createUser);
-
-export async function createUser(e) {
+export async function createCategoryBtn(e) {
     e.preventDefault();
     const inputNameElem = document.querySelector('#username').value;
     const inputAgeElem = document.querySelector('#userage').value;

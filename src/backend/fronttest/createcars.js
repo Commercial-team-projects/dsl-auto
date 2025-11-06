@@ -1,23 +1,16 @@
 
-//const url = 'http://localhost:4000/api/usersdb';
-
-
-function Card() {
-    return (
-        <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-4">
-            <h2 className="text-xl font-medium text-black">Привет!</h2>
-            <p className="text-gray-500">Это карточка на Tailwind</p>
-        </div>
-    );
-}
-Card();
-const btnElem = document.querySelector('#createUserBtn');
+import 'bootstrap'; // Loads all Bootstrap's JavaScript plugins
+import 'bootstrap/dist/css/bootstrap.min.css'; // Imports compiled CSS
 
 
 
-btnElem.addEventListener('click', createUser);
+const btnElem = document.querySelector('#createCarBtn');
 
-export async function createUser(e) {
+
+
+btnElem.addEventListener('click', createCar);
+
+export async function createCar(e) {
     e.preventDefault();
     const inputNameElem = document.querySelector('#username').value;
     const inputAgeElem = document.querySelector('#userage').value;

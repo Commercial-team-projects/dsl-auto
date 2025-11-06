@@ -53,10 +53,10 @@ export async function sendQuery() {
   const markup = await data
     .map(
       el => `<li>
-                  <div>${el.name}</div>
-                  <div>${el.age}</div>
-                  <div>${el.email}</div>
-                  <div>${el.password}</div>
+                  <div  class="col-sm-6">${el.name}</div>
+                  <div  class="col-sm-3">${el.age}</div>
+                  <div  class="col-sm-6">${el.email}</div>
+                  <div  class="col-sm-3">${el.password}</div>
               </li>`
     )
     .join('');

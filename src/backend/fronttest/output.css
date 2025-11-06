@@ -1,0 +1,31 @@
+/* @import "tailwindcss"; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 4px;
+}
+
+li>div {
+  border: 1px solid grey;
+}
+
+.wrapper {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+#addCar,
+#sendTestimonial,
+#sendUser {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  row-gap: 4px;
+}

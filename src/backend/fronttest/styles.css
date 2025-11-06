@@ -1,19 +1,32 @@
-@import "tailwindcss";
-li{
+/* @import "tailwindcss"; */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+    padding: 20px;
+}
+
+li {
     display: flex;
     flex-direction: row;
     gap: 5px;
     padding: 4px;
 }
-li > div {
-     border: 1px solid grey;
+
+li>div {
+    border: 1px solid grey;
 
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     column-gap: 10px;
 }
-#addCar,#sendTestimonial, #sendUser{
+
+#addCar,
+#sendTestimonial,
+#sendUser {
     display: flex;
     flex-direction: column;
     width: 330px;
