@@ -1,4 +1,4 @@
-import"./assets/main-vfsnpgIP.js";import{c as $}from"./assets/db-MuaPowCb.js";const h=document.querySelector(".popular-cars-list");function y(s){const{src:a,brand:r,model:c,specifications:l,year:i,mileage:o,custom:t,price:e,stock:p,rating:f}=s,{drive_type:n,transmission:u,engine:m,country_of_origin:d}=l;return`<li class="popular-cars-item">
+import"./assets/main-Dmsvrt_E.js";import{c as $}from"./assets/db-MuaPowCb.js";const h=document.querySelector(".popular-cars-list");function y(s){const{src:a,brand:r,model:c,specifications:l,year:i,mileage:o,custom:t,price:e,stock:p,rating:f}=s,{drive_type:n,transmission:u,engine:m,country_of_origin:d}=l;return`<li class="popular-cars-item">
           <div class="popular-cars-box">
             <div class="popular-cars-main">
               <picture class="popular-cars-image">
