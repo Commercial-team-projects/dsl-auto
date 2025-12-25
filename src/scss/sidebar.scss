@@ -1,5 +1,5 @@
-@import './base.scss';
-@import './mixins/media_mixin.scss';
+@use './base' as *;
+@use '../scss/mixins/media_mixin' as media;
 
 @media (max-width: 1279px) {
   .sidebar {

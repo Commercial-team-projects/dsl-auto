@@ -1,6 +1,6 @@
-@use './base' as *;
-@use '../scss/mixins/media_mixin' as media;
-@import '../css/callback.css';
+@use '/scss/base.scss' as *;
+@use '/scss/mixins/media_mixin.scss' as media;
+@import '/css/callback.css';
 
 .callback {
   padding: 0 20px;

@@ -1,5 +1,5 @@
-@import './base.scss';
-@import './mixins/media_mixin.scss';
+@use './base' as *;
+@use '../scss/mixins/media_mixin' as media;
 
 .scroll-up-link {
   position: fixed;
@@ -20,7 +20,7 @@
     opacity: 0.8;
   }
 
-  @include _1280 {
+  @include media.desktop {
     right: 125px;
   }
 }

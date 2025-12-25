@@ -1,5 +1,5 @@
-@import '../base.scss';
-@import '../mixins/media_mixin.scss';
+@use '/scss/base.scss' as *;
+@use '/scss/mixins/media_mixin.scss' as media;
 .catalog-title {
   font-size: 32px;
   color: $color-black;
@@ -8,8 +8,8 @@
 .catalog-title {
   display: none;
 
-  @include _1280 {
+  @include media.desktop {
     display: block;
   }
 }
-@import '../index/popular.scss';
+// @import '/scss/index/popular.scss';

@@ -1,5 +1,5 @@
-@import './base.scss';
-@import './mixins/media_mixin.scss';
+@use './base' as *;
+@use '../scss/mixins/media_mixin' as media;
 
 .header-container {
   background-color: $color-white;
@@ -52,7 +52,7 @@
   }
 }
 
-@include _1280 {
+@include media.desktop {
   .mobile-container {
     display: none;
   }

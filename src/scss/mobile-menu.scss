@@ -1,5 +1,5 @@
-@import './mixins/media_mixin.scss';
-@import '../scss/base.scss';
+@use './base' as *;
+@use '../scss/mixins/media_mixin' as media;
 
 .mobile-menu {
   position: fixed;
@@ -26,7 +26,7 @@
     transform: scale(1);
   }
 
-  @include _1280 {
+  @include media.desktop {
     display: none;
   }
 

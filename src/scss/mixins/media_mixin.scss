@@ -3,6 +3,16 @@
     @content;
   }
 }
+@mixin tablet {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
 @mixin _1280 {
   @media (min-width: 1280px) {
     @content;
