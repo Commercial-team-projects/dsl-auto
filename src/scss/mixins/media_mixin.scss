@@ -1,7 +1,12 @@
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
 @mixin _1280 {
-    @media (min-width: 1280px){
-        @content;
-    }
+  @media (min-width: 1280px) {
+    @content;
+  }
 }
 @mixin _768 {
     @media (min-width: 768px){

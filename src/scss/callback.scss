@@ -1,18 +1,14 @@
-@import './base.scss';
-@import '../scss/mixins/media_mixin.scss';
+@use './base' as *;
+@use '../scss/mixins/media_mixin' as media;
 @import '../css/callback.css';
 
 .callback {
   padding: 0 20px;
   background-color: transparent;
 
-  @include _1280 {
-    padding: 0 40px;
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-125%);
-    // z-index: 10;
-  }
+  @include media.desktop {
+  padding: 0 40px;
+}
 
   &-container {
     display: flex;
@@ -33,7 +29,7 @@
       font-size: 24px;
     }
 
-    @include _1280 {
+    @include media.desktop {
       width: 387px;
       // margin: auto auto auto 43px;
     }
@@ -44,7 +40,7 @@
     flex-direction: column;
     gap: 40px;
 
-    @include _1280 {
+    @include media.desktop {
       gap: 24px;
     }
   }
@@ -92,7 +88,7 @@
     transition: background-color 250ms ease;
     align-self: center;
 
-    @include _1280 {
+    @include media.desktop {
       padding: 12px 16px;
 
       font-weight: 500;
