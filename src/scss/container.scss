@@ -1,4 +1,4 @@
-@import "./mixins/media_mixin.scss";
+@use '../scss/mixins/media_mixin' as media;
 
 .container {
   /* Styles for Mobile devices */
@@ -8,7 +8,7 @@
     padding: 0 20px;
   
   /* Styles for Desktop devices */
-  @include _1280 {
+  @include media.desktop {
       max-width: 1080px;
       padding: 0 40px;
     }

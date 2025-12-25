@@ -1,4 +1,4 @@
-@import '../base.scss';
+@use '/scss/base.scss' as *;
 .popular {
   padding-top: 544px;
   background-color: $color-white;

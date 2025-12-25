@@ -1,5 +1,5 @@
-@import "../mixins/media_mixin.scss";
-@import "../../scss/base.scss";
+@use '/scss/base' as *;
+@use '/scss/mixins/media_mixin' as media;
 
 .section-buying-proccess {
     padding-top: 33px;
@@ -7,7 +7,7 @@
 }
 
 .buying-proccess {
-    @include _1280 {
+    @include media.desktop{
         display: flex;
         gap: 41px;
     }
@@ -18,7 +18,7 @@
     border-radius: 10px;
     display: none;
 
-    @include _1280 {
+    @include media.desktop {
         display: block;
     }
 }
@@ -28,7 +28,7 @@
     flex-direction: column;
     row-gap: 24px;
 
-    @include _1280 {
+    @include media.desktop {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 56px;
@@ -41,7 +41,7 @@
     font-weight: 700;
     margin-bottom: 24px;
 
-    @include _1280 {
+    @include media.desktop {
         margin-bottom: 33px;
     }
 }
@@ -52,7 +52,7 @@
     column-gap: 16px;
     justify-self: center;
 
-    @include _1280 {
+    @include media.desktop {
         width: 159px;
         flex-direction: column;
     }
@@ -60,14 +60,14 @@
 
 .process-wrapper:last-child {
     width: 335px;
-    border: 1px dashed $color-red;
+    border: 1px solid $color-grey;
     border-radius: 9px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    @include _1280 {
+    @include media.desktop {
         flex-direction: column-reverse;
         justify-content: center;
         width: 159px;
@@ -78,7 +78,7 @@
     min-width: 42px;
     min-height: 42px;
 
-    @include _1280 {
+    @include media.desktop {
         margin-bottom: 17px;
         min-width: 50px;
         min-height: 50px;
@@ -90,16 +90,15 @@
     width: 31px;
     height: 31px;
 
-    @include _1280 {
+    @include media.desktop {
         margin-bottom: 0px;
-        @include border-green;
     }
 }
 
 .process-wrapper:last-child>.proccess-title {
     margin-bottom: 0;
 
-    @include _1280 {
+    @include media.desktop {
         width: 97px;
         text-align: center;
         margin-bottom: 14px;
@@ -111,7 +110,7 @@
     font-weight: 500;
     margin-bottom: 17px;
 
-    @include _1280 {
+    @include media.desktop {
         font-weight: 700;
     }
 }
@@ -120,7 +119,7 @@
     font-size: 14px;
     font-weight: 500;
 
-    @include _1280 {
+    @include media.desktop {
         font-size: 12px;
     }
 }

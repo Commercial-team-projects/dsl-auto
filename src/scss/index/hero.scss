@@ -1,5 +1,5 @@
-@import '../mixins/media_mixin.scss';
-@import '../base.scss';
+@use '/scss/base.scss' as *;
+@use '/scss/mixins/media_mixin.scss' as media;
 
 .hero-container {
   width: 100vw;
@@ -25,7 +25,7 @@
   }
 }
 
-@include _1280 {
+@include media.desktop {
   .hero-container {
     background-image: linear-gradient(
         to bottom,
